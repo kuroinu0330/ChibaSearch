@@ -27,6 +27,7 @@ public class SearchM : MonoBehaviour
             _nearObj = _gameObject;
             _serchTime = 0;
             //‘ÎÛ‚ÌˆÊ’u‚Ì•ûŒü‚ğŒü‚­
+            if (_nearObj == null) { return; }
             transform.LookAt(_nearObj.transform);
             if (_gameObject == null) { return; }
 

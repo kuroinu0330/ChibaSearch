@@ -64,17 +64,38 @@ public class ZoomCamera : MonoBehaviour
         {
             case 1:
                 _Camera.orthographicSize = 19.0f;
-                _badge.SetActive(false);
+                if (_badge == null)
+                {
+                    //_badge.SetActive(false);
+                }
+                else
+                {
+                    _badge.SetActive(false);
+                }
                 Debug.Log("Šg‘å");
                 break;
             case 2:
                 _Camera.orthographicSize = 10.0f;
-                _badge.SetActive(false);
+                if (_badge == null)
+                {
+                    //_badge.SetActive(false);
+                }
+                else
+                {
+                    _badge.SetActive(false);
+                }
                 Debug.Log("Šg‘å‚Q");
                 break;
             case 3:
                 _Camera.orthographicSize = 5.0f;
-                _badge.SetActive(true);
+                if (_badge == null)
+                {
+                    //_badge.SetActive(true);
+                }
+                else
+                {
+                    _badge.SetActive(true);
+                }
                 Debug.Log("Šg‘å3");
                 break;
         }
