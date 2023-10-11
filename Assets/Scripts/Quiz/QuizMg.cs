@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class QuizMg: MonoBehaviour
 {
-    /*public Quiz1 quiz1;
-    //public int  hoge = Quiz1.QuizScore;
-    private void Update()
+    public static QuizMg instance;
+
+    public List<GameObject> badge = new List<GameObject>();
+    public List<GameObject> Bookbadge = new List<GameObject>();
+
+    public void Awake()
     {
-        TrueFalse();
-    }
-    public void TrueFalse()
-    {
-        switch (hoge)
+        if (instance == null)
         {
-            case 1:
-                Debug.Log("正解");
-                break;
-            case 2:
-                Debug.Log("不正解");
-                break;
+            // シングルトン処理
+            instance = this;
         }
-    }*/
+    }
 }

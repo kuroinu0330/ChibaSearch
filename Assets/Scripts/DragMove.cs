@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     private RectTransform _rectTransform;
+    [SerializeField]
     private Image _image;
     private float _speed = 15;
 
