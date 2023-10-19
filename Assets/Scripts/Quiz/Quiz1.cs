@@ -15,6 +15,10 @@ public class Quiz1 : MonoBehaviour
     private GameObject _TrueText;
     [SerializeField]
     private GameObject _FalseText;
+    /*[SerializeField]
+    private GameObject _CameraPos;
+    [SerializeField]
+    private GameObject _CanvasPos;*/
     public void TrueClick()
     {
         Debug.Log("aaaa");
@@ -47,6 +51,8 @@ public class Quiz1 : MonoBehaviour
                 break;
             case 2:
                 Destroy(_gameObject,2);
+                //_CameraPos.transform.position = new Vector3(0, 0, 0);
+                //_CanvasPos.transform.position = new Vector3(0, 0, 0);
                 if (_FalseText == null){}
                 else
                 {
