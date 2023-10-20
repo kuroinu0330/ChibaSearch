@@ -514,8 +514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 7490332808042995624, guid: bf79cd36e30655b41b8f95a75ec66475, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &104250029
 GameObject:
@@ -879,8 +880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 6728308059394200517, guid: 7a0404e9e1a70214c9f4df631f1cee60, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &231584552
 GameObject:
@@ -1179,8 +1181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 579282037863698815, guid: e1003a645e310dd449ec8b7aa5511da8, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &327969206
 GameObject:
@@ -1419,8 +1422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 3194910026725360222, guid: 987f683710f787444a20a14951f96370, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &393296068
 GameObject:
@@ -2334,8 +2338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 1585548995766585520, guid: 72a417c34e72dac4cb75b5d42415899c, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &604183675
 GameObject:
@@ -2828,6 +2833,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188046078}
     m_Modifications:
+    - target: {fileID: 6556296540561889635, guid: 1bc4414ca1ea2b34da88642e8b34065a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556296540561889635, guid: 1bc4414ca1ea2b34da88642e8b34065a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 76.99695
+      objectReference: {fileID: 0}
     - target: {fileID: 6556296542269121382, guid: 1bc4414ca1ea2b34da88642e8b34065a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3759,8 +3772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 6698836013566474206, guid: d8816660611b63949a85ae8794f366f4, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &1148440115
 GameObject:
@@ -3925,8 +3939,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 5376801782890810983, guid: 0780383ed472d084d884125c08a4ecd1, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &1166746751
 GameObject:
@@ -4091,8 +4106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 7653234311358559447, guid: 95b092d4792aaa442a14e6035078a562, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &1188046074
 GameObject:
@@ -4386,8 +4402,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 4
   QuizPrefab: {fileID: 6556296542269121387, guid: 1bc4414ca1ea2b34da88642e8b34065a, type: 3}
+  quizMg: {fileID: 2066144872}
+  num: 7
   canvas: {fileID: 1188046074}
 --- !u!1 &1258219700
 GameObject:
@@ -4764,8 +4781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26fe07f38a045848b276764967efa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
   QuizPrefab: {fileID: 1641567891909526468, guid: 4cc70e5bfbacf92479936c806932e000, type: 3}
+  quizMg: {fileID: 0}
+  num: 0
   canvas: {fileID: 1188046074}
 --- !u!1 &1450454476
 GameObject:
@@ -5971,7 +5989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2664933e37c95844a691f1a83f0a90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 0
+  num: 7
   numBook: 0
   QuizScore: 0
   _gameObject: {fileID: 609704044}
@@ -6014,6 +6032,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2083490427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2083490429}
+  - component: {fileID: 2083490428}
+  m_Layer: 0
+  m_Name: SoundMg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2083490428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083490427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8155eb75d527704195d704d62e9684b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2083490429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083490427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -290.76624, y: -34.85972, z: 91.71608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880123051002405045
 GameObject:

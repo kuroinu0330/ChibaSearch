@@ -6,9 +6,13 @@ using UnityEngine.UI;
 public class Quizcreate : MonoBehaviour
 {
     [SerializeField]
-    public int num;
-    [SerializeField]
     private GameObject QuizPrefab;
+
+    [SerializeField]
+    QuizMg quizMg;
+
+    [SerializeField]
+    public int num;
 
     [SerializeField]
     GameObject canvas;
@@ -31,10 +35,9 @@ public class Quizcreate : MonoBehaviour
         }
         else
         {
-            QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(num));
+            QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(quizMg.num));
             GameObject prefab = (GameObject)Instantiate(QuizPrefab);
             prefab.transform.SetParent(canvas.transform, false);
-            //Instantiate(QuizPrefab);
         }
     }
 }

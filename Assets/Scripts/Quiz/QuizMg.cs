@@ -7,7 +7,7 @@ using static MapGemPlacement;
 public class QuizMg: MonoBehaviour
 {
     [SerializeField]
-    private int num;
+    public int num;
     [SerializeField]
     private int numBook;
     public int QuizScore;
@@ -21,7 +21,7 @@ public class QuizMg: MonoBehaviour
     private Text _questiontext;
     public static QuizMg instance;
 
-    
+    Quizcreate quizcreate;
 
     public List<GameObject> badge = new List<GameObject>();
     public List<GameObject> Bookbadge = new List<GameObject>();
