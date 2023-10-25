@@ -21,7 +21,7 @@ public class QuizMg: MonoBehaviour
     private Text _questiontext;
     public static QuizMg instance;
 
-    Quizcreate quizcreate;
+    //Quizcreate quizcreate;
 
     public List<GameObject> badge = new List<GameObject>();
     public List<GameObject> Bookbadge = new List<GameObject>();
@@ -34,6 +34,7 @@ public class QuizMg: MonoBehaviour
             instance = this;
         }
     }
+
     public void TrueClick()
     {
 
@@ -46,6 +47,7 @@ public class QuizMg: MonoBehaviour
         Debug.Log("bbbb");
         QuizScore = 2;
     }
+
     private void Update()
     {
         TrueFalse();
@@ -54,15 +56,21 @@ public class QuizMg: MonoBehaviour
     {
         switch (QuizScore)
         {
+            //ê≥â
             case 1:
-                Destroy(_gameObject, 2);
+                _gameObject.SetActive(false);
+                //Destroy(_gameObject, 2);
                 QuizMg.instance.badge[num].SetActive(false);
                 QuizMg.instance.Bookbadge[numBook].SetActive(true);
                 CatholineCompass.instance.JewelGameObjectRemove(QuizMg.instance.badge[num]);
+                QuizScore = 0;
                 break;
+            //ïsê≥
             case 2:
-                Destroy(_gameObject, 2);
+                _gameObject.SetActive(false);
+                //Destroy(_gameObject, 2);
                 Debug.Log("ïsê≥â");
+                QuizScore = 0;
                 break;
         }
     }
@@ -72,5 +80,9 @@ public class QuizMg: MonoBehaviour
         _TrueText.text = quiz.correct;
         _FalseText.text = quiz.incorrect;
         Debug.Log("ñ‚ëËï∂:" + quiz.correct + "\n" + "ê≥â:" + quiz.incorrect + "\n" + "ïsê≥â:" + quiz.question);
+    }
+    public void badgedelet(int num2)
+    {
+        num = num2;
     }
 }

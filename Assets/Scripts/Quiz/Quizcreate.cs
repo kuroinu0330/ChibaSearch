@@ -31,13 +31,13 @@ public class Quizcreate : MonoBehaviour
     {
         if (QuizPrefab == null)
         {
-
+            
         }
         else
         {
-            QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(quizMg.num));
-            GameObject prefab = (GameObject)Instantiate(QuizPrefab);
-            prefab.transform.SetParent(canvas.transform, false);
+            /*QuizMg.instance.badgedelet(num);
+            QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(num));
+            QuizPrefab.SetActive(true);*/
         }
     }
 }

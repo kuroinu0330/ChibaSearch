@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using System;
 
 public class MapGemPlacement : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class MapGemPlacement : MonoBehaviour
     public static MapGemPlacement instance;
 
     // 配列
-    public static List<_Quiz> quizList = new List<_Quiz>();
+    [SerializeField]
+    private List<_Quiz> quizList = new List<_Quiz>();
 
     public _Quiz _quiz(int num)
     {
@@ -22,6 +24,7 @@ public class MapGemPlacement : MonoBehaviour
     /// <summary>
     /// 構造体
     /// </summary>
+    [Serializable]
     public struct _Quiz
     {
         //問題
@@ -49,15 +52,15 @@ public class MapGemPlacement : MonoBehaviour
         //読み込んだ全文を一行に切り分ける(要素数が縦列の総数)
         string[] line = csv.Split('\n');
 
-        _Quiz quiz = new _Quiz();
-
         // 
         for (int i = 0; i < line.Length - 1; i++)
         {
+            _Quiz quiz = new _Quiz();
             string[] values = line[i].Split(",");
-            quiz.correct    = values[0];
-            quiz.incorrect  = values[1];
-            quiz.question   = values[2];
+            quiz.question   = values[0];
+            quiz.correct    = values[1];
+            quiz.incorrect  = values[2];
+
 
             quizList.Add(quiz);
 
