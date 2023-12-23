@@ -30,7 +30,7 @@ public class CatholineCompass : MonoBehaviour
         if (_jewelryObjects.Count != 0)
         {
             // 配列を虫眼鏡から近い順にソートする
-            JewelArraySort();
+            //JewelArraySort();
 
             // カソリーヌを一番近い宝石の方向を向かせる
             CatholineNavigation();
@@ -52,28 +52,38 @@ public class CatholineCompass : MonoBehaviour
     /// </summary>
     private void CatholineNavigation()
     {
-        // 単位ベクトルを求めるVector型配列
-        Vector2 dis =
-            (Vector2)(_glassesObject.gameObject.transform.position +
-                      _jewelryObjects[0].transform.position);
-        dis = dis.normalized;
+        //// 単位ベクトルを求めるVector型配列
+        Vector3 dis =
+            -_jewelryObjects[0].transform.position + _glassesObject.gameObject.transform.position;
+        ////Debug.Log(dis);
 
-        // Z軸の回転量を保持する変数
+        dis = -dis.normalized;
+        //Debug.Log(dis);
+
+
+        //// Z軸の回転量を保持する変数
         float RotateZ = 0.0f;
 
-        // 単位ベクトルのY軸がマイナスだった場合以下の処理を実行する
-        if (dis.y < 0)
-        {
-            RotateZ = dis.x * 90 - 180f;
-        }
-        // 単位ベクトルのY軸がプラスだった場合以下の処理を実行する
-        else
-        {
-            RotateZ = dis.x * -90;
-        }
+        //// 単位ベクトルのY軸がマイナスだった場合以下の処理を実行する
+        //if (dis.y < 0)
+        //{
+        //    RotateZ = dis.x * 90 - 180f;
+        //}
+        //// 単位ベクトルのY軸がプラスだった場合以下の処理を実行する
+        //else
+        //{
+        //    RotateZ = dis.x * -90;
+        //}
+
+        RotateZ = -Mathf.Atan2(dis.x, dis.y) * Mathf.Rad2Deg;
 
         // カソリーヌの回転処理を実行する
-        this.transform.rotation = Quaternion.Euler(0, 0, RotateZ);
+       this.transform.rotation = Quaternion.Euler(0, 0, RotateZ);
+        //this.transform.LookAt(_jewelryObjects[0].transform);
+
+        //Debug.Log(RotateZ);
+        //Debug.Log(_glassesObject.transform.position);
+        //Debug.Log(_jewelryObjects[0].transform.position);
     }
 
     /// <summary>

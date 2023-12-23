@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static SoundManager;
 
 public class BadgeBook : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BadgeBook : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 8);
             _Book.SetActive(true);
         }
     }

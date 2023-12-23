@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static SoundManager;
 
 public class ZoomCamera : MonoBehaviour
 {
+    [SerializeField, Header("ƒ`ƒƒƒ“ƒlƒ‹")]
+    private int _Channel;
     [SerializeField]
     private Camera _Camera;
     [Range(_countMin, _countMax)]
     [SerializeField]
-    private int _count = 1;
+    public int _count = 1;
 
-    const int _countMax = 3;
+    const int _countMax = 2;
     const int _countMin = 1;
 
     [SerializeField]
@@ -47,6 +50,7 @@ public class ZoomCamera : MonoBehaviour
         if (_count < _countMax)
         {
             _count++;
+            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
             ZoomCount();
         }
     }
@@ -55,6 +59,7 @@ public class ZoomCamera : MonoBehaviour
         if (_count > _countMin)
         {
             _count--;
+            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
             ZoomCount();
         }
     }
@@ -63,18 +68,6 @@ public class ZoomCamera : MonoBehaviour
         switch (_count)
         {
             case 1:
-                _Camera.orthographicSize = 19.0f;
-                if (_badge == null)
-                {
-                    //_badge.SetActive(false);
-                }
-                else
-                {
-                    _badge.SetActive(false);
-                }
-                Debug.Log("Šg‘å");
-                break;
-            case 2:
                 _Camera.orthographicSize = 13.0f;
                 if (_badge == null)
                 {
@@ -86,8 +79,8 @@ public class ZoomCamera : MonoBehaviour
                 }
                 Debug.Log("Šg‘å‚Q");
                 break;
-            case 3:
-                _Camera.orthographicSize = 9.0f;
+            case 2:
+                _Camera.orthographicSize = 7.0f;
                 if (_badge == null)
                 {
                     //_badge.SetActive(true);
