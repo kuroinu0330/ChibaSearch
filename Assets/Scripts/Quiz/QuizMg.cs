@@ -1,25 +1,126 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using static MapGemPlacement;
+using static SoundManager;
 
 public class QuizMg: MonoBehaviour
 {
-    /*public Quiz1 quiz1;
-    //public int  hoge = Quiz1.QuizScore;
+    [SerializeField, Header("ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½")]
+    private int _Channel;
+    [SerializeField]
+    public int num;
+    [SerializeField]
+    private int numBook;
+    [SerializeField]
+    public int numGet;
+    [SerializeField]
+    public int numBadge;
+    public int QuizScore;
+    [SerializeField]
+    private GameObject _gameObject;
+    [SerializeField]
+    private TMP_Text _TrueText;
+    [SerializeField]
+    private TMP_Text _FalseText;
+    [SerializeField]
+    private TMP_Text _questiontext;
+    public static QuizMg instance;
+    [SerializeField]
+    public GameObject _badgeGetObj;
+    //Quizcreate quizcreate;
+    [SerializeField]
+    private GameObject TMPText;
+
+
+    public List<GameObject> badge = new List<GameObject>();
+    public List<GameObject> Bookbadge = new List<GameObject>();
+    public List<GameObject> Getbadge = new List<GameObject>();
+
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            // ï¿½Vï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            instance = this;
+        }
+    }
+
+    public void TrueClick()
+    {
+        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 1);
+        //SoundManager.instance.SEVolume();
+        Debug.Log("aaaa");
+        QuizScore = 1;
+    }
+    public void FalseClick()
+    {
+        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 2);
+        Debug.Log("bbbb");
+        QuizScore = 2;
+    }
+
     private void Update()
     {
         TrueFalse();
     }
     public void TrueFalse()
     {
-        switch (hoge)
+        switch (QuizScore)
         {
+            //ï¿½ï¿½ï¿½ï¿½
             case 1:
-                Debug.Log("³‰ğ");
+                SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
+                Invoke(nameof(quizFalse), 1f);
+                badge[num].SetActive(false);
+                Bookbadge[numBook].SetActive(true);
+                Getbadge[numGet].SetActive(true);
+                Debug.Log(numGet);
+                CatholineCompass.instance.JewelGameObjectRemove(QuizMg.instance.badge[num]);
+                Invoke(nameof(badgeGet), 1f);
+                QuizScore = 0;
+                
                 break;
+            //ï¿½sï¿½ï¿½
             case 2:
-                Debug.Log("•s³‰ğ");
+                SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
+                _gameObject.SetActive(false);
+                //Destroy(_gameObject, 2);
+                Debug.Log("ï¿½sï¿½ï¿½ï¿½ï¿½");
+                QuizScore = 0;
                 break;
         }
-    }*/
+    }
+    public void Setquestion(_Quiz quiz)
+    {
+        _questiontext.text = quiz.question;
+            _TrueText.text = quiz.correct;
+           _FalseText.text = quiz.incorrect;
+        Debug.Log("ï¿½ï¿½è•¶:" + quiz.correct + "\n" + "ï¿½ï¿½ï¿½ï¿½:" + quiz.incorrect + "\n" + "ï¿½sï¿½ï¿½ï¿½ï¿½:" + quiz.question);
+    }
+    public void badgedelet(int num2)
+    {
+        num = num2;
+        numBook = num2;
+        numGet = num2;
+        numBadge = num2;
+    }
+    public void badgeGet()
+    {
+        _badgeGetObj.SetActive(true);
+    }
+    public void quizFalse()
+    {
+        _gameObject.SetActive(false);
+    }
+    private void TextTrue()
+    {
+        if (num == 19)
+        {
+            TMPText.SetActive(true);
+        }
+
+    }
 }

@@ -1,15 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Quiz1 : MonoBehaviour
 {
+    [SerializeField]
+    private int num;
+    [SerializeField]
+    private int numBook;
     public int QuizScore;
     [SerializeField]
     private GameObject _gameObject;
     [SerializeField]
-    private GameObject _badgeobj;
-    // Start is called before the first frame update
+    private Text _TrueText;
+    [SerializeField]
+    private Text _FalseText;
+    [SerializeField]
+    private Text text;
+
+    
     public void TrueClick()
     {
         Debug.Log("aaaa");
@@ -30,8 +40,9 @@ public class Quiz1 : MonoBehaviour
         {
             case 1:
                 Destroy(_gameObject,2);
-                Destroy(_badgeobj);
-                Debug.Log("ê≥â");
+                QuizMg.instance.badge[num].SetActive(false);
+                QuizMg.instance.Bookbadge[numBook].SetActive(true);
+                CatholineCompass.instance.JewelGameObjectRemove(QuizMg.instance.badge[num]);
                 break;
             case 2:
                 Destroy(_gameObject,2);
