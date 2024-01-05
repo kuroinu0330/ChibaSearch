@@ -92,6 +92,7 @@ public class CatholineCompass : MonoBehaviour
     /// <param name="obj">獲得済みの宝石オブジェクト</param>
     public void JewelGameObjectRemove(GameObject obj)
     {
+        Debug.Log("検証実行");
         // 配列から使用済みの宝石オブジェクトをリムーブする
         _jewelryObjects.Remove(obj);
     }
