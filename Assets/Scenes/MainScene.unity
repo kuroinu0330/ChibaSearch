@@ -1081,7 +1081,6 @@ GameObject:
   m_Component:
   - component: {fileID: 104250031}
   - component: {fileID: 104250030}
-  - component: {fileID: 104250032}
   - component: {fileID: 104250033}
   m_Layer: 0
   m_Name: 01
@@ -1159,70 +1158,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &104250032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104250029}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e761886061fee4daeb285534b46a4199, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _glassesObject: {fileID: 393296068}
-  _jewelryObjects:
-  - {fileID: 1223508977}
-  - {fileID: 1148440115}
-  - {fileID: 331048137}
-  - {fileID: 252641675}
-  - {fileID: 84987703}
-  - {fileID: 1143109546}
-  - {fileID: 1166746751}
-  - {fileID: 1359700949}
-  - {fileID: 225022810}
-  - {fileID: 603212695}
-  - {fileID: 1272222782}
-  - {fileID: 5056922}
-  - {fileID: 1300102836}
-  - {fileID: 1012393648}
-  - {fileID: 674004930}
-  - {fileID: 1759818530}
-  - {fileID: 972620890}
-  - {fileID: 779571972}
-  - {fileID: 1871045045}
-  - {fileID: 409543867}
-  - {fileID: 251859803}
-  - {fileID: 1251042381}
-  - {fileID: 2062658910}
-  - {fileID: 803672907}
-  - {fileID: 601674109}
-  - {fileID: 111599307}
-  - {fileID: 1783099537}
-  - {fileID: 1555698108}
-  - {fileID: 1398718514}
-  - {fileID: 251420204}
-  - {fileID: 226978187}
-  - {fileID: 1739393221}
-  - {fileID: 708765729}
-  - {fileID: 1464501849}
-  - {fileID: 246193558}
-  - {fileID: 1510144920}
-  - {fileID: 1231457788}
-  - {fileID: 1263689151}
-  - {fileID: 1979998169}
-  - {fileID: 993331264}
-  - {fileID: 1691144022}
-  - {fileID: 848424769}
-  - {fileID: 954115139}
-  - {fileID: 281669106}
-  - {fileID: 1910828520}
-  - {fileID: 1712163088}
-  - {fileID: 1687786716}
-  - {fileID: 979071732}
-  - {fileID: 1812950575}
-  - {fileID: 1621907272}
 --- !u!114 &104250033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20523,7 +20458,7 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
+  m_StyleSheet: {fileID: 11400000, guid: 7f3f6003a1cb94be0880b592c93e04f9, type: 2}
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
@@ -24307,7 +24242,7 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
+  m_StyleSheet: {fileID: 11400000, guid: 7f3f6003a1cb94be0880b592c93e04f9, type: 2}
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
@@ -24349,7 +24284,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 59.204224, y: 0, z: 59.204224, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.00024411829, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -25856,7 +25791,7 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
+  m_StyleSheet: {fileID: 11400000, guid: 7f3f6003a1cb94be0880b592c93e04f9, type: 2}
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
