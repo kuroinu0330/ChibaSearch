@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SoundManager : MonoBehaviour
 {
@@ -95,6 +96,10 @@ public class SoundManager : MonoBehaviour
     // 音源保持用のリスト
     [SerializeField]
     private AudioClips _audioClips = new AudioClips();
+
+    // オプションの中身を作りたくないので中身の数値を得るために変数としてコンポーネントを保持することにした(1:BGM,2:SE)
+    [SerializeField] 
+    private List<UnityEngine.UI.Slider> _sliders;
 
     // シングルトン化
     public static SoundManager instance; 
@@ -354,27 +359,32 @@ public class SoundManager : MonoBehaviour
         {
             for (int i = 0; i < BGM.Count; i++)
             {
-                BGM[i].volume = _soundManager.BGMVolume;
+                //BGM[i].volume = _soundManager.BGMVolume;
+                BGM[i].volume = _soundManager._sliders[0].value;
             }
             
             for (int i = 0; i < SE.SYSTEM.Count; i++)
             {
-                SE.SYSTEM[i].volume = _soundManager.SEVolume;
+                //SE.SYSTEM[i].volume = _soundManager.SEVolume;
+                SE.SYSTEM[i].volume = _soundManager._sliders[1].value;
             }
             
             for (int i = 0; i < SE.ENVIRONMENT.Count; i++)
             {
-                SE.ENVIRONMENT[i].volume = _soundManager.SEVolume;
+                //SE.ENVIRONMENT[i].volume = _soundManager.SEVolume;
+                SE.ENVIRONMENT[i].volume = _soundManager._sliders[1].value;
             }
             
             for (int i = 0; i < SE.PLAYER.Count; i++)
             {
-                SE.PLAYER[i].volume = _soundManager.SEVolume;
+                //SE.PLAYER[i].volume = _soundManager.SEVolume;
+                SE.PLAYER[i].volume = _soundManager._sliders[1].value;
             }
             
             for (int i = 0; i < SE.ENEMY.Count; i++)
             {
-                SE.ENEMY[i].volume = _soundManager.SEVolume;
+                //SE.ENEMY[i].volume = _soundManager.SEVolume;
+                SE.ENEMY[i].volume = _soundManager._sliders[1].value;
             }
             
             for (int i = 0; i < VOICE.Count; i++)
@@ -570,6 +580,8 @@ public class SoundManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
 
             StartCoroutine(VolumeSettings);
+
+            PlayAudioSorce(AudioOfType.BGM, 1);
         }
         // インスタンスが定義済みの場合以下の処理を実行する
         else
