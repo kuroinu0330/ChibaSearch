@@ -14,7 +14,13 @@ public class badgeEffect : MonoBehaviour
     [SerializeField]
     private bool flagTo = false;
     private int _completeCount;
+    [SerializeField]
+    batchSE batchSE;
     // Update is called once per frame
+    void Start()
+    {
+        batchSE batchSE = GetComponent<batchSE>();
+    }
     void Update()
     {
         if (targetObject.transform.localScale.x > 1)
@@ -24,6 +30,7 @@ public class badgeEffect : MonoBehaviour
         else if(!flagTo)
         {
             flag = true;
+            batchSE.SECount++;
         }
         badgeSE();
         if (_completeCount == 50)
@@ -35,7 +42,6 @@ public class badgeEffect : MonoBehaviour
     {
         if (flag)
         {
-            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 5);  
             _completeCount++;
             flagTo = true;
             flag = false;
