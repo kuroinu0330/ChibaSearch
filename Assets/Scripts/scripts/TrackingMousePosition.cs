@@ -53,7 +53,7 @@ public class TrackingMousePosition : MonoBehaviour
 
                 MapisActive = false;
                 Vector3 mousePosition = touch.position;
-                if (mousePosition.x < 0.85f * Screen.width && mousePosition.y > 0.15f * Screen.height && outLens((Vector2)mousePosition))
+                if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
                 {
                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
                     target.z = _cursorAllTrans.position.z;
@@ -87,7 +87,7 @@ public class TrackingMousePosition : MonoBehaviour
                 MapisActive = false;
                 Vector3 mousePosition = Input.mousePosition;
                 //Debug.Log(mousePosition.x + ":" + mousePosition.y);
-                if (mousePosition.x < 0.85f * Screen.width && mousePosition.y > 0.15f * Screen.height && outLens((Vector2)mousePosition))
+                if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
                 {
                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
                     target.z = _cursorAllTrans.position.z;
