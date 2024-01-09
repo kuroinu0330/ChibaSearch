@@ -50,13 +50,15 @@ public class SoundManager : MonoBehaviour
         }
         set
         {
-            if (value < 0f)
+            if (value <= 0f)
             {
                 value = 0.0f;
+                Debug.Log("極小検知");
             }
-            else if (1f < value)
+            else if (1f <= value)
             {
                 value = 1.0f;
+                Debug.Log("極大検知");
             }
             
             _seVolume = value;
@@ -138,6 +140,7 @@ public class SoundManager : MonoBehaviour
                     break;
                 // 音源のジャンルが「SYSTEMSE」の時以下の処理を実行する
                 case AudioOfType.SYSTEMSE:
+                    Debug.Log("検問1");
                     
                     // SYSTEMSE再生用のAudioSorceを追加する
                     audioSource = SearchPlayableAudioSource(audioType, ref SE.SYSTEM);
@@ -237,8 +240,10 @@ public class SoundManager : MonoBehaviour
                     else
                     {
                         // 音量をBGM用の設定で代入する
-                        audioSource.volume = _soundManager.BGMVolume;
-                    
+                        //audioSource.volume = _soundManager.BGMVolume;
+                        audioSource.volume = _soundManager._sliders[0].value;
+                        //Debug.Log("準備段階：" + audioSource.volume);
+
                         // 生成時に再生される設定を無効にする
                         audioSource.playOnAwake = false;
                     
@@ -250,12 +255,56 @@ public class SoundManager : MonoBehaviour
                     }
     
                     break;
-                // AudioClipが「SE」の場合以下の処理を実行する
-                case AudioOfType.SE:
+                // AudioClipが「SYSTEMSE」の場合以下の処理を実行する
+                case AudioOfType.SYSTEMSE:
                     
                     // 音量をSE用の設定で代入する
-                    audioSource.volume = _soundManager.SEVolume;
+                    //audioSource.volume = _soundManager.SEVolume;
+                    audioSource.volume = _soundManager._sliders[1].value;
+                    Debug.Log("準備段階：" + audioSource.volume);
+
+                    // 生成時に再生される設定を無効にする
+                    audioSource.playOnAwake = false;
                     
+                    // 自動ループを無効にする
+                    audioSource.loop = false;
+                    break;
+                // AudioClipが「ENVIRONMENTSE」の場合以下の処理を実行する
+                case AudioOfType.ENVIRONMENTSE:
+                    
+                    // 音量をSE用の設定で代入する
+                    //audioSource.volume = _soundManager.SEVolume;
+                    audioSource.volume = _soundManager._sliders[1].value;
+                    Debug.Log("準備段階：" + audioSource.volume);
+
+                    // 生成時に再生される設定を無効にする
+                    audioSource.playOnAwake = false;
+                    
+                    // 自動ループを無効にする
+                    audioSource.loop = false;
+                    break;
+                // AudioClipが「PLAYERSE」の場合以下の処理を実行する
+                case AudioOfType.PLAYERSE:
+                    
+                    // 音量をSE用の設定で代入する
+                    //audioSource.volume = _soundManager.SEVolume;
+                    audioSource.volume = _soundManager._sliders[1].value;
+                    Debug.Log("準備段階：" + audioSource.volume);
+
+                    // 生成時に再生される設定を無効にする
+                    audioSource.playOnAwake = false;
+                    
+                    // 自動ループを無効にする
+                    audioSource.loop = false;
+                    break;
+                // AudioClipが「ENEMYSE」の場合以下の処理を実行する
+                case AudioOfType.ENEMYSE:
+                    
+                    // 音量をSE用の設定で代入する
+                    //audioSource.volume = _soundManager.SEVolume;
+                    audioSource.volume = _soundManager._sliders[1].value;
+                    Debug.Log("準備段階：" + audioSource.volume);
+
                     // 生成時に再生される設定を無効にする
                     audioSource.playOnAwake = false;
                     
@@ -617,7 +666,8 @@ public class SoundManager : MonoBehaviour
             Debug.Log("オーディオソースの取得失敗");
             return;
         }
-        
+
+        Debug.Log(audioSource.volume);
         // 音源の本再生処理
         audioSource.Play();
         StartCoroutine(_audioSorces.AudioSourceDelete(audioType, audioSource));

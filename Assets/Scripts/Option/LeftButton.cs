@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class LeftButton : MonoBehaviour
 {
     [SerializeField]
@@ -12,9 +13,7 @@ public class LeftButton : MonoBehaviour
     [SerializeField]
     private GameObject _minusButton;
     [SerializeField]
-    private GameObject _optionButton;
-    [SerializeField]
-    TrackingMousePosition _mousePosition;
+    TrackingMousePosition trackingMousePosition;
     [SerializeField]
     private GameObject _LeftButton;
     [SerializeField]
@@ -29,6 +28,7 @@ public class LeftButton : MonoBehaviour
         _bookButton.transform.position = new Vector3(130,160,0);
         _plusButton.transform.position = new Vector3(125,620,0);
         _minusButton.transform.position = new Vector3(125,445,0);
+        trackingMousePosition.LRKey = TrackingMousePosition.LeftRightKey.Left;
         _RightButton.SetActive(true);
         _LeftButton.SetActive(false);
         _bookButton.GetComponent<Image>().sprite = spriteAto;

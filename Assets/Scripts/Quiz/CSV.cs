@@ -36,7 +36,7 @@ public class CSV : MonoBehaviour
         int i = 1;
 
         /* Resouces/CSV‰º‚ÌCSV“Ç‚İ‚İ */
-        csvFile = Resources.Load("CSV/Quiz.csv") as TextAsset;
+        csvFile = Resources.Load("CSV/QuizBackUp.Vol.2.csv") as TextAsset;
 
         //“Ç‚İ‚ñ‚¾ƒeƒLƒXƒg‚ğStringŒ^‚É‚µ‚ÄŠi”[
         StringReader reader = new StringReader(csvFile.text);

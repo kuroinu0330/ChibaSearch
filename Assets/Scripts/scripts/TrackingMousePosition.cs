@@ -42,63 +42,132 @@ public class TrackingMousePosition : MonoBehaviour
 
         [SerializeField] 
     private Touch touch;
+    public enum LeftRightKey
+    {
+        Left,
+        Right,
+    }
+    [SerializeField]
+    public LeftRightKey LRKey;
     void Update()
     {
-       // if (Application.isEditor)
-        if (Input.touchCount > 0)
+        // if (Application.isEditor)
+        switch (LRKey)
         {
-            if (Input.touchCount == 1)
-            {
-                touch = Input.GetTouch(0);
-
-                MapisActive = false;
-                Vector3 mousePosition = touch.position;
-                if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
+            case LeftRightKey.Left:
+                if (Input.touchCount > 0)
                 {
-                    Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-                    target.z = _cursorAllTrans.position.z;
-                    _cursorAllTrans.position = target;
+                    if (Input.touchCount == 1)
+                    {
+                        touch = Input.GetTouch(0);
+
+                        MapisActive = false;
+                        Vector3 mousePosition = touch.position;
+                        if (mousePosition.x > 0.15f * Screen.width && outLens((Vector2)mousePosition))
+                        {
+                            Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
+                            target.z = _cursorAllTrans.position.z;
+                            _cursorAllTrans.position = target;
+                        }
+                    }
+                    else if (Input.touchCount == 2)
+                    {
+                        touch = Input.GetTouch(0);
+
+                        MapisActive = true;
+                        Vector3 mousePosition = touch.position;
+                    }
                 }
-            }
-            else if (Input.touchCount == 2)
-            {
-                touch = Input.GetTouch(0);
-
-                MapisActive = true;
-                Vector3 mousePosition = touch.position;
-            }
-        }
-        else
-        {
-            if (isActiveflag)
-            {
-                // CanvasのRectTransform内にあるマウスの座標をローカル座標に変換する
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                    _mapCanvas,
-                    Input.mousePosition,
-                    _canvas.worldCamera,
-                    out var mousePosition);
-
-                // ポインターをマウスの座標に移動する
-                _cursorTransform.anchoredPosition = new Vector2(mousePosition.x, mousePosition.y);
-            }
-            if (Input.GetMouseButton(0))
-            {
-                MapisActive = false;
-                Vector3 mousePosition = Input.mousePosition;
-                //Debug.Log(mousePosition.x + ":" + mousePosition.y);
-                if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
+                else
                 {
-                    Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-                    target.z = _cursorAllTrans.position.z;
-                    _cursorAllTrans.position = target;
+                    if (isActiveflag)
+                    {
+                        // CanvasのRectTransform内にあるマウスの座標をローカル座標に変換する
+                        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                            _mapCanvas,
+                            Input.mousePosition,
+                            _canvas.worldCamera,
+                            out var mousePosition);
+
+                        // ポインターをマウスの座標に移動する
+                        _cursorTransform.anchoredPosition = new Vector2(mousePosition.x, mousePosition.y);
+                    }
+                    if (Input.GetMouseButton(0))
+                    {
+                        MapisActive = false;
+                        Vector3 mousePosition = Input.mousePosition;
+                        //Debug.Log(mousePosition.x + ":" + mousePosition.y);
+                        if (mousePosition.x > 0.15f * Screen.width && outLens((Vector2)mousePosition))
+                        {
+                            Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
+                            target.z = _cursorAllTrans.position.z;
+                            _cursorAllTrans.position = target;
+                        }
+                    }
+                    else if (Input.GetMouseButtonUp(0))
+                    {
+                        /*_cursorAllTrans.transform.SetParent(_mapCanvas);*/
+                        MapisActive = true;
+                    }
                 }
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                /*_cursorAllTrans.transform.SetParent(_mapCanvas);*/
-                MapisActive = true;
-            }
+                break;
+            case LeftRightKey.Right:
+                if (Input.touchCount > 0)
+                {
+                    if (Input.touchCount == 1)
+                    {
+                        touch = Input.GetTouch(0);
+
+                        MapisActive = false;
+                        Vector3 mousePosition = touch.position;
+                        if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
+                        {
+                            Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
+                            target.z = _cursorAllTrans.position.z;
+                            _cursorAllTrans.position = target;
+                        }
+                    }
+                    else if (Input.touchCount == 2)
+                    {
+                        touch = Input.GetTouch(0);
+
+                        MapisActive = true;
+                        Vector3 mousePosition = touch.position;
+                    }
+                }
+                else
+                {
+                    if (isActiveflag)
+                    {
+                        // CanvasのRectTransform内にあるマウスの座標をローカル座標に変換する
+                        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                            _mapCanvas,
+                            Input.mousePosition,
+                            _canvas.worldCamera,
+                            out var mousePosition);
+
+                        // ポインターをマウスの座標に移動する
+                        _cursorTransform.anchoredPosition = new Vector2(mousePosition.x, mousePosition.y);
+                    }
+                    if (Input.GetMouseButton(0))
+                    {
+                        MapisActive = false;
+                        Vector3 mousePosition = Input.mousePosition;
+                        //Debug.Log(mousePosition.x + ":" + mousePosition.y);
+                        if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
+                        {
+                            Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
+                            target.z = _cursorAllTrans.position.z;
+                            _cursorAllTrans.position = target;
+                        }
+                    }
+                    else if (Input.GetMouseButtonUp(0))
+                    {
+                        /*_cursorAllTrans.transform.SetParent(_mapCanvas);*/
+                        MapisActive = true;
+                    }
+                }
+                break;
         }
     }
 
