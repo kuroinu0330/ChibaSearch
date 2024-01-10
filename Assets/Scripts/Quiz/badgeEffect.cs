@@ -5,21 +5,21 @@ using static SoundManager;
 
 public class badgeEffect : MonoBehaviour
 {
-    [SerializeField, Header("ƒXƒP[ƒ‹‚ğ•Ï‚¦‚½‚¢ƒIƒuƒWƒFƒNƒg")]
+    [SerializeField, Header("ï¿½Xï¿½Pï¿½[ï¿½ï¿½ï¿½ï¿½Ï‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g")]
     GameObject targetObject;
-    //ƒXƒP[ƒ‹‚ğ•Ï‚¦‚é‘¬“x
+    //ï¿½Xï¿½Pï¿½[ï¿½ï¿½ï¿½ï¿½Ï‚ï¿½ï¿½é‘¬ï¿½x
     private Vector3 speed = new Vector3(2, 2, 0);
     [SerializeField]
     private bool flag = false;
     [SerializeField]
     private bool flagTo = false;
     private int _completeCount;
-    [SerializeField]
-    batchSE batchSE;
+    //[SerializeField]
+    //batchSE batchSE;
     // Update is called once per frame
     void Start()
     {
-        batchSE batchSE = GetComponent<batchSE>();
+        //batchSE batchSE = GetComponent<batchSE>();
     }
     void Update()
     {
@@ -30,7 +30,7 @@ public class badgeEffect : MonoBehaviour
         else if(!flagTo)
         {
             flag = true;
-            batchSE.SECount++;
+            //batchSE.SECount++;
         }
         badgeSE();
         if (_completeCount == 50)

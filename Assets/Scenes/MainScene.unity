@@ -753,6 +753,7 @@ GameObject:
   - component: {fileID: 75239037}
   - component: {fileID: 75239039}
   - component: {fileID: 75239038}
+  - component: {fileID: 75239040}
   m_Layer: 5
   m_Name: Option
   m_TagString: Untagged
@@ -819,6 +820,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75239036}
   m_CullTransparentMesh: 1
+--- !u!114 &75239040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75239036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15dea3950b91a4bac940ce9fa3a70fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmVolumeSetting: {fileID: 1869829196}
+  seVolumeSetting: {fileID: 820032820}
+  updateInterval: 0.25
 --- !u!1 &84987703
 GameObject:
   m_ObjectHideFlags: 0
@@ -8849,7 +8865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705696749}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17, y: -45, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
