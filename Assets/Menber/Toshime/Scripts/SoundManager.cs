@@ -261,7 +261,7 @@ public class SoundManager : MonoBehaviour
                     // 音量をSE用の設定で代入する
                     audioSource.volume = _soundManager.SEVolume;
                     //audioSource.volume = _soundManager._sliders[1].value;
-                    Debug.Log("準備段階：" + audioSource.volume);
+                    //Debug.Log("準備段階：" + audioSource.volume);
 
                     // 生成時に再生される設定を無効にする
                     audioSource.playOnAwake = false;

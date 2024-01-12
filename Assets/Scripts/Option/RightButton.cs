@@ -26,7 +26,7 @@ public class RightButton : MonoBehaviour
         _bookButton.transform.position = new Vector3(1800, 150, 0);
         _plusButton.transform.position = new Vector3(1800, 600, 0);
         _minusButton.transform.position = new Vector3(1800, 430, 0);
-        trackingMousePosition.LRKey = TrackingMousePosition.LeftRightKey.Right;
+        //trackingMousePosition.LRKey = TrackingMousePosition.LeftRightKey.Right;
         _RightButton.SetActive(false);
         _LeftButton.SetActive(true);
         _bookButton.GetComponent<Image>().sprite = spriteMae;

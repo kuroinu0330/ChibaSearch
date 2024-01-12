@@ -10,6 +10,7 @@ public class ButtonActive : MonoBehaviour
         if (other.gameObject.CompareTag("Badge"))
         {
             other.gameObject.GetComponent<Button>().enabled = true;
+            other.gameObject.GetComponent<Image>().raycastPadding = new Vector4(-50, -50, -50, -50);
         }
 
     }
@@ -18,6 +19,7 @@ public class ButtonActive : MonoBehaviour
         if (other.gameObject.CompareTag("Badge"))
         {
             other.gameObject.GetComponent<Button>().enabled = false;
+            other.gameObject.GetComponent<Image>().raycastPadding = new Vector4(0, 0, 0, 0);
         }
     }
 }

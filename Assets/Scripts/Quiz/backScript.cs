@@ -9,5 +9,7 @@ public class backScript : MonoBehaviour
     public void BackImage()
     {
         _image.SetActive(false);
+        // 移動可能フラグを有効化
+        TrackingMousePosition.instace.UIButtomExit();
     }
 }

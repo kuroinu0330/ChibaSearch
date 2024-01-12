@@ -18,7 +18,9 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (trackingMousePosition.MapisActive == true) {
+        //if (trackingMousePosition.MapisActive == true) 
+        if (trackingMousePosition.moveType == TrackingMousePosition.MoveType.Map)
+        {
             //if(_rectTransform.)
             //Debug.Log(eventData);
             Vector2 vec = eventData.delta;
@@ -56,15 +58,15 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
                 _rectTransform.anchoredPosition = new Vector2(-27899, _rectTransform.anchoredPosition.y);
             }
 
-            if (_rectTransform.anchoredPosition.y + Movement.y >= 19590)
+            if (_rectTransform.anchoredPosition.y + Movement.y >= 19585)
             {
                 Movement = new Vector2(Movement.x, 0f);
-                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, 19589);
+                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, 19584);
             }
-            else if (_rectTransform.anchoredPosition.y + Movement.y <= -19590)
+            else if (_rectTransform.anchoredPosition.y + Movement.y <= -19585)
             {
                 Movement = new Vector2(Movement.x, 0f);
-                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, -19589);
+                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, -19584);
             }
 
             //_rectTransform.anchoredPosition += vec * _speed;

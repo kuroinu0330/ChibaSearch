@@ -5,7 +5,7 @@ using static SoundManager;
 
 public class BookBack : MonoBehaviour
 {
-    [SerializeField, Header("ƒ`ƒƒƒ“ƒlƒ‹")]
+    [SerializeField, Header("ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½")]
     private int _Channel;
     [SerializeField]
     private GameObject _BookBack;
@@ -19,6 +19,8 @@ public class BookBack : MonoBehaviour
         {
             SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
             _BookBack.SetActive(false);
+            // ç§»å‹•å¯èƒ½ãƒ•ãƒ©ã‚°ã‚’æœ‰åŠ¹åŒ–
+            TrackingMousePosition.instace.UIButtomExit();
         }
     }
 }

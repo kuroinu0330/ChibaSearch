@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static SoundManager;
 
 public class AppEnd : MonoBehaviour
 {
-    [SerializeField, Header("ƒ`ƒƒƒ“ƒlƒ‹")]
+    [SerializeField, Header("ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½")]
     private int _Channel;
     public void EndClick()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
-        Application.Quit();
+        SceneManager.LoadScene("Titel");
+        //Application.Quit();
     }
 }

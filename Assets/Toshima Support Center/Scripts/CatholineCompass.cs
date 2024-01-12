@@ -11,6 +11,8 @@ public class CatholineCompass : MonoBehaviour
     // シーン上に配置してある全ての宝石を保持する配列
     [SerializeField] private List<GameObject> _jewelryObjects;
 
+    [SerializeField] private bool gameClear = false;
+
     // シングルトン化
     public static CatholineCompass instance;
     
@@ -34,6 +36,11 @@ public class CatholineCompass : MonoBehaviour
 
             // カソリーヌを一番近い宝石の方向を向かせる
             CatholineNavigation();
+        }
+        else if (!gameClear)
+        {
+            gameClear = true;
+            this.gameObject.SetActive(false);
         }
     }
 

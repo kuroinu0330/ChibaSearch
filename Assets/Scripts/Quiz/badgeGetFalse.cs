@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class badgeGetFalse : MonoBehaviour
@@ -11,6 +9,7 @@ public class badgeGetFalse : MonoBehaviour
     {
         QuizMg.instance.Getbadge[QuizMg.instance.numGet].SetActive(false);
         _obj.SetActive(false);
-        
+        // 移動可能フラグを有効化
+        TrackingMousePosition.instace.UIButtomExit();
     }
 }

@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using static SoundManager;
 
 public class ZoomCamera : MonoBehaviour
 {
-    [SerializeField, Header("ƒ`ƒƒƒ“ƒlƒ‹")]
+    [SerializeField, Header("ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½")]
     private int _Channel;
     [SerializeField]
     private Camera _Camera;
@@ -77,7 +75,7 @@ public class ZoomCamera : MonoBehaviour
                 {
                     _badge.SetActive(false);
                 }
-                Debug.Log("Šg‘å‚Q");
+                Debug.Log("ï¿½gï¿½ï¿½Q");
                 break;
             case 2:
                 _Camera.orthographicSize = 7.0f;
@@ -89,7 +87,7 @@ public class ZoomCamera : MonoBehaviour
                 {
                     _badge.SetActive(true);
                 }
-                Debug.Log("Šg‘å3");
+                Debug.Log("ï¿½gï¿½ï¿½3");
                 break;
         }
     }
