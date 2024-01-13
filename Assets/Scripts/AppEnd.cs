@@ -10,7 +10,7 @@ public class AppEnd : MonoBehaviour
     private int _Channel;
     public void EndClick()
     {
-        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
+        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 0);
         SceneManager.LoadScene("Titel");
         //Application.Quit();
     }

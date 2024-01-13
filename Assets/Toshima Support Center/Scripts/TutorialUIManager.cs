@@ -52,7 +52,9 @@ public class TutorialUIManager : MonoBehaviour
     private enum KeyWord
     {
         タッチ,
-        左クリック
+        二本指,
+        左クリック,
+        右クリック
     }
 
     private void Awake()
