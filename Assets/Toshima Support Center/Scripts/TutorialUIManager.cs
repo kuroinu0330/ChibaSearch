@@ -139,7 +139,7 @@ public class TutorialUIManager : MonoBehaviour
         this.gameObject.SetActive(false);
         SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 4);
         // 移動可能フラグを有効化
-        TrackingMousePosition.instace.UIButtomExit();
+        TrackingMousePosition.Instance.UIButtomExit();
     }
 
     /// <summary>

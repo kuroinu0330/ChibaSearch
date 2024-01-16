@@ -20,7 +20,7 @@ public class BookBack : MonoBehaviour
             SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
             _BookBack.SetActive(false);
             // 移動可能フラグを有効化
-            TrackingMousePosition.instace.UIButtomExit();
+            TrackingMousePosition.Instance.UIButtomExit();
         }
     }
 }
