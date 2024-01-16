@@ -10,6 +10,6 @@ public class backScript : MonoBehaviour
     {
         _image.SetActive(false);
         // 移動可能フラグを有効化
-        TrackingMousePosition.instace.UIButtomExit();
+        TrackingMousePosition.Instance.UIButtomExit();
     }
 }

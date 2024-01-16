@@ -11,7 +11,7 @@ public class Quizcreate : MonoBehaviour
     [SerializeField]
     private Transform[] _ButtonBottom;
 
-    [SerializeField, Header("É`ÉÉÉìÉlÉã")]
+    [SerializeField, Header("„ÉÅ„É£„É≥„Éç„É´")]
     private int _Channel;
 
     [SerializeField]
@@ -27,17 +27,6 @@ public class Quizcreate : MonoBehaviour
     GameObject canvas;
 
     //TrackingMousePosition trackingMousePosition;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Quizcreate1()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
@@ -51,7 +40,7 @@ public class Quizcreate : MonoBehaviour
             QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(num));
             QuizPrefab.SetActive(true);
             //TrackingMousePosition.instace.isActiveflag = false;
-            Debug.Log("ñ‚ëË");
+            Debug.Log("ÂïèÈ°å");
             if (Random.Range(0,2) == 0)
             {
                 Vector3 sw = _ButtonTop[0].position;

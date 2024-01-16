@@ -50,15 +50,13 @@ public class SoundManager : MonoBehaviour
         }
         set
         {
-            if (value <= 0f)
+            if (value < 0f)
             {
                 value = 0.0f;
-                Debug.Log("極小検知");
             }
-            else if (1f <= value)
+            else if (1f > value)
             {
                 value = 1.0f;
-                Debug.Log("極大検知");
             }
             
             _seVolume = value;
