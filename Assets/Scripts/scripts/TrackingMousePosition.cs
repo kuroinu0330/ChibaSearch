@@ -160,9 +160,9 @@ public class TrackingMousePosition : MonoBehaviour
     {
         Vector2 dis = (Vector2)lensPosition.position - (Vector2)_camera.ScreenToWorldPoint(pos);
 
-        Debug.Log("レンズの中心座標 : " + (Vector2)lensPosition.position);
-        Debug.Log("マウスの中心座標 : " + (Vector2)_camera.ScreenToWorldPoint(pos));
-        Debug.Log("距離 : " + dis.magnitude);
+        //Debug.Log("レンズの中心座標 : " + (Vector2)lensPosition.position);
+        //Debug.Log("マウスの中心座標 : " + (Vector2)_camera.ScreenToWorldPoint(pos));
+        //Debug.Log("距離 : " + dis.magnitude);
         
         if (Mathf.Abs(dis.magnitude) >= lensRadius)
         {
