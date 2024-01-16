@@ -36,6 +36,8 @@ public class Quizcreate : MonoBehaviour
         }
         else
         {
+            QuizMg.instance.ButtonControllerA.InteractiveOn();
+            QuizMg.instance.ButtonControllerB.InteractiveOn();
             QuizMg.instance.badgedelet(num);
             QuizMg.instance.Setquestion(MapGemPlacement.instance._quiz(num));
             QuizPrefab.SetActive(true);

@@ -19682,6 +19682,8 @@ MonoBehaviour:
   _questiontext: {fileID: 1875330075}
   _badgeGetObj: {fileID: 206425368}
   TMPText: {fileID: 206425368}
+  _buttonControllerA: {fileID: 6556296540509704686}
+  _buttonControllerB: {fileID: 6556296542330591101}
   badge:
   - {fileID: 1223508977}
   - {fileID: 1148440115}
@@ -36723,6 +36725,7 @@ GameObject:
   - component: {fileID: 6556296540509704685}
   - component: {fileID: 6556296540509704684}
   - component: {fileID: 6556296540509704675}
+  - component: {fileID: 6556296540509704686}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -36807,6 +36810,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6556296540509704686}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: InteractiveOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6556296540509704684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36845,6 +36860,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6556296540509704672}
   m_CullTransparentMesh: 1
+--- !u!114 &6556296540509704686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556296540509704672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ed1a97fbbafdb409193d062120b39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 6556296540509704675}
 --- !u!1 &6556296541575487891
 GameObject:
   m_ObjectHideFlags: 0
@@ -37033,7 +37061,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6556296542330591091}
   m_OnClick:
     m_PersistentCalls:
@@ -37041,6 +37069,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1268904698}
         m_TargetAssemblyTypeName: QuizMg, Assembly-CSharp
         m_MethodName: TrueClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6556296542330591101}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: InteractiveOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37092,6 +37132,7 @@ GameObject:
   - component: {fileID: 6556296542330591100}
   - component: {fileID: 6556296542330591091}
   - component: {fileID: 6556296542330591090}
+  - component: {fileID: 6556296542330591101}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -37107,6 +37148,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6556296542330591095}
   m_CullTransparentMesh: 1
+--- !u!114 &6556296542330591101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556296542330591095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ed1a97fbbafdb409193d062120b39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 6556296542330591090}
 --- !u!1 &6709743031757201283
 GameObject:
   m_ObjectHideFlags: 0
