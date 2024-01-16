@@ -34,6 +34,7 @@ public class QuizMg: MonoBehaviour
     [SerializeField]
     private GameObject TMPText;
 
+    private int ClickSECount;
 
     public List<GameObject> badge = new List<GameObject>();
     public List<GameObject> Bookbadge = new List<GameObject>();
@@ -50,6 +51,7 @@ public class QuizMg: MonoBehaviour
 
     public void TrueClick()
     {
+        ClickSECount++;
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 1);
         //SoundManager.instance.SEVolume();
         Debug.Log("aaaa");
