@@ -3,7 +3,7 @@ using static SoundManager;
 
 public class ZoomCamera : MonoBehaviour
 {
-    [SerializeField, Header("�`�����l��")]
+    [SerializeField, Header("変化があったときの効果音")]
     private int _Channel;
     [SerializeField]
     private Camera _Camera;
@@ -71,7 +71,7 @@ public class ZoomCamera : MonoBehaviour
                 {
                     _badge.SetActive(false);
                 }
-                Debug.Log("�g��Q");
+                Debug.Log("縮小");
                 break;
             case 2:
                 _Camera.orthographicSize = 7.0f;
@@ -79,7 +79,7 @@ public class ZoomCamera : MonoBehaviour
                 {
                     _badge.SetActive(true);
                 }
-                Debug.Log("�g��3");
+                Debug.Log("拡大");
                 break;
         }
     }
