@@ -15,7 +15,7 @@ public class CatholineCompass : MonoBehaviour
 
     // シングルトン化
     public static CatholineCompass instance;
-    
+
     private void Awake()
     {
         // インスタンスが設定されていない場合以下の処理を実行する
@@ -25,14 +25,14 @@ public class CatholineCompass : MonoBehaviour
             instance = this;
         }
     }
-    
-    private void FixedUpdate()
+
+    private void Update()
     {
         // 配列に最低でも一つの要素が内包されている時に以下の処理を実行する
         if (_jewelryObjects.Count != 0)
         {
             // 配列を虫眼鏡から近い順にソートする
-            //JewelArraySort();
+            JewelArraySort();
 
             // カソリーヌを一番近い宝石の方向を向かせる
             CatholineNavigation();
@@ -49,9 +49,11 @@ public class CatholineCompass : MonoBehaviour
     /// </summary>
     private void JewelArraySort()
     {
-        _jewelryObjects.Sort((a, b) => MathF
-            .Abs(Vector3.Distance(_glassesObject.transform.position, a.transform.position))
-            .CompareTo(MathF.Abs(Vector3.Distance(_glassesObject.transform.position, b.transform.position))));
+        _jewelryObjects.Sort((a, b) => {
+                                    int aSDist = (int)(a.transform.position-_glassesObject.transform.position).sqrMagnitude;
+                                    int bSDist = (int)(b.transform.position-_glassesObject.transform.position).sqrMagnitude;
+                                    return aSDist - bSDist;
+                                });
     }
 
     /// <summary>
@@ -85,7 +87,7 @@ public class CatholineCompass : MonoBehaviour
         RotateZ = -Mathf.Atan2(dis.x, dis.y) * Mathf.Rad2Deg;
 
         // カソリーヌの回転処理を実行する
-       this.transform.rotation = Quaternion.Euler(0, 0, RotateZ);
+        this.transform.rotation = Quaternion.Euler(0, 0, RotateZ);
         //this.transform.LookAt(_jewelryObjects[0].transform);
 
         //Debug.Log(RotateZ);
