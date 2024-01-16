@@ -33,6 +33,12 @@ public class QuizMg: MonoBehaviour
     //Quizcreate quizcreate;
     [SerializeField]
     private GameObject TMPText;
+    [SerializeField]
+    private ButtonController _buttonControllerA;
+    public ButtonController ButtonControllerA => _buttonControllerA;
+    [SerializeField]
+    private ButtonController _buttonControllerB;
+    public ButtonController ButtonControllerB => _buttonControllerB;
 
     private int ClickSECount;
 
@@ -51,13 +57,13 @@ public class QuizMg: MonoBehaviour
 
     public void TrueClick()
     {
-        ClickSECount++;
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 1);
         //SoundManager.instance.SEVolume();
         Debug.Log("aaaa");
         QuizScore = 1;
         SoundManager.instance.PlayAudioSorce(AudioOfType.BGM,1);
     }
+
     public void FalseClick()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 2);
