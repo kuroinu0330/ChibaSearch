@@ -85,7 +85,7 @@ public class QuizMg: MonoBehaviour
                 Invoke(nameof(badgeGet), 1f);
                 QuizScore = 0;
                 // 移動可能フラグを有効化
-                TrackingMousePosition.instace.UIButtomExit();
+                TrackingMousePosition.Instance.UIButtomExit();
                 break;
             //�s��
             case 2:
@@ -95,7 +95,7 @@ public class QuizMg: MonoBehaviour
                 //Debug.Log("�s����");
                 QuizScore = 0;
                 // 移動可能フラグを有効化
-                TrackingMousePosition.instace.UIButtomExit();
+                TrackingMousePosition.Instance.UIButtomExit();
                 break;
         }
     }

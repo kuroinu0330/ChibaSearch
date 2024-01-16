@@ -211,8 +211,8 @@ GameObject:
   - component: {fileID: 5056928}
   - component: {fileID: 5056927}
   - component: {fileID: 5056926}
-  - component: {fileID: 5056925}
   - component: {fileID: 5056924}
+  - component: {fileID: 5056929}
   m_Layer: 7
   m_Name: Button (Legacy) (11)
   m_TagString: Badge
@@ -229,7 +229,7 @@ RectTransform:
   m_GameObject: {fileID: 5056922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -261,22 +261,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 11
   canvas: {fileID: 1188046074}
---- !u!58 &5056925
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056922}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &5056926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +332,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -371,6 +355,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5056922}
   m_CullTransparentMesh: 0
+--- !u!58 &5056929
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056922}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &21173000
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,8 +937,8 @@ GameObject:
   - component: {fileID: 84987708}
   - component: {fileID: 84987707}
   - component: {fileID: 84987706}
-  - component: {fileID: 84987705}
   - component: {fileID: 84987709}
+  - component: {fileID: 84987710}
   m_Layer: 7
   m_Name: Button (Legacy) (4)
   m_TagString: Badge
@@ -955,7 +955,7 @@ RectTransform:
   m_GameObject: {fileID: 84987703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -966,22 +966,6 @@ RectTransform:
   m_AnchoredPosition: {x: -41.33, y: -9.02}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &84987705
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84987703}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &84987706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,7 +1037,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1097,6 +1081,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 4
   canvas: {fileID: 1188046074}
+--- !u!58 &84987710
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84987703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &111599307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,8 +1109,8 @@ GameObject:
   - component: {fileID: 111599313}
   - component: {fileID: 111599312}
   - component: {fileID: 111599311}
-  - component: {fileID: 111599310}
   - component: {fileID: 111599309}
+  - component: {fileID: 111599314}
   m_Layer: 7
   m_Name: Button (Legacy) (25)
   m_TagString: Badge
@@ -1127,7 +1127,7 @@ RectTransform:
   m_GameObject: {fileID: 111599307}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -1159,22 +1159,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 25
   canvas: {fileID: 1188046074}
---- !u!58 &111599310
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111599307}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &111599311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,7 +1230,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1269,6 +1253,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111599307}
   m_CullTransparentMesh: 0
+--- !u!58 &111599314
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111599307}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &117922747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,9 +1638,9 @@ GameObject:
   m_Component:
   - component: {fileID: 200539050}
   - component: {fileID: 200539053}
-  - component: {fileID: 200539055}
+  - component: {fileID: 200539054}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MushimeganeTotte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1675,7 +1675,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200539049}
   m_CullTransparentMesh: 1
---- !u!114 &200539055
+--- !u!114 &200539054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 200539049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1695,16 +1695,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &203304710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,8 +2108,8 @@ GameObject:
   - component: {fileID: 225022815}
   - component: {fileID: 225022814}
   - component: {fileID: 225022813}
-  - component: {fileID: 225022812}
   - component: {fileID: 225022816}
+  - component: {fileID: 225022817}
   m_Layer: 7
   m_Name: Button (Legacy) (8)
   m_TagString: Badge
@@ -2129,7 +2126,7 @@ RectTransform:
   m_GameObject: {fileID: 225022810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -2140,22 +2137,6 @@ RectTransform:
   m_AnchoredPosition: {x: -31.02, y: -17.39}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &225022812
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225022810}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &225022813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,7 +2208,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2271,6 +2252,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 8
   canvas: {fileID: 1188046074}
+--- !u!58 &225022817
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225022810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &226978187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,8 +2280,8 @@ GameObject:
   - component: {fileID: 226978193}
   - component: {fileID: 226978192}
   - component: {fileID: 226978191}
-  - component: {fileID: 226978190}
   - component: {fileID: 226978189}
+  - component: {fileID: 226978194}
   m_Layer: 7
   m_Name: Button (Legacy) (30)
   m_TagString: Badge
@@ -2301,7 +2298,7 @@ RectTransform:
   m_GameObject: {fileID: 226978187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -2333,22 +2330,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 30
   canvas: {fileID: 1188046074}
---- !u!58 &226978190
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226978187}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &226978191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,7 +2401,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2443,6 +2424,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226978187}
   m_CullTransparentMesh: 0
+--- !u!58 &226978194
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226978187}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &230418906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,8 +2766,8 @@ GameObject:
   - component: {fileID: 246193564}
   - component: {fileID: 246193563}
   - component: {fileID: 246193562}
-  - component: {fileID: 246193561}
   - component: {fileID: 246193560}
+  - component: {fileID: 246193565}
   m_Layer: 7
   m_Name: Button (Legacy) (34)
   m_TagString: Badge
@@ -2787,7 +2784,7 @@ RectTransform:
   m_GameObject: {fileID: 246193558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.034999996, z: 108.000015}
+  m_LocalScale: {x: 0.01, y: 0.034999996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -2819,22 +2816,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 34
   canvas: {fileID: 1188046074}
---- !u!58 &246193561
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246193558}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &246193562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2906,7 +2887,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2929,6 +2910,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246193558}
   m_CullTransparentMesh: 0
+--- !u!58 &246193565
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246193558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &247815109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,8 +3148,8 @@ GameObject:
   - component: {fileID: 251420210}
   - component: {fileID: 251420209}
   - component: {fileID: 251420208}
-  - component: {fileID: 251420207}
   - component: {fileID: 251420206}
+  - component: {fileID: 251420211}
   m_Layer: 7
   m_Name: Button (Legacy) (29)
   m_TagString: Badge
@@ -3169,7 +3166,7 @@ RectTransform:
   m_GameObject: {fileID: 251420204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -3201,22 +3198,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 29
   canvas: {fileID: 1188046074}
---- !u!58 &251420207
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251420204}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &251420208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3288,7 +3269,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3311,6 +3292,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251420204}
   m_CullTransparentMesh: 0
+--- !u!58 &251420211
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251420204}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &251859803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,8 +3320,8 @@ GameObject:
   - component: {fileID: 251859809}
   - component: {fileID: 251859808}
   - component: {fileID: 251859807}
-  - component: {fileID: 251859806}
   - component: {fileID: 251859805}
+  - component: {fileID: 251859810}
   m_Layer: 7
   m_Name: Button (Legacy) (20)
   m_TagString: Badge
@@ -3341,7 +3338,7 @@ RectTransform:
   m_GameObject: {fileID: 251859803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -3373,22 +3370,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 20
   canvas: {fileID: 1188046074}
---- !u!58 &251859806
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251859803}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &251859807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3460,7 +3441,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3483,6 +3464,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251859803}
   m_CullTransparentMesh: 0
+--- !u!58 &251859810
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251859803}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &252641675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,8 +3492,8 @@ GameObject:
   - component: {fileID: 252641680}
   - component: {fileID: 252641679}
   - component: {fileID: 252641678}
-  - component: {fileID: 252641677}
   - component: {fileID: 252641681}
+  - component: {fileID: 252641682}
   m_Layer: 7
   m_Name: Button (Legacy) (3)
   m_TagString: Badge
@@ -3513,7 +3510,7 @@ RectTransform:
   m_GameObject: {fileID: 252641675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -3524,22 +3521,6 @@ RectTransform:
   m_AnchoredPosition: {x: -29.18, y: 19.51}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &252641677
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252641675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &252641678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,7 +3592,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3655,6 +3636,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 3
   canvas: {fileID: 1188046074}
+--- !u!58 &252641682
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252641675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &264769433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,8 +3703,8 @@ GameObject:
   - component: {fileID: 281669112}
   - component: {fileID: 281669111}
   - component: {fileID: 281669110}
-  - component: {fileID: 281669109}
   - component: {fileID: 281669108}
+  - component: {fileID: 281669113}
   m_Layer: 7
   m_Name: Button (Legacy) (43)
   m_TagString: Badge
@@ -3724,7 +3721,7 @@ RectTransform:
   m_GameObject: {fileID: 281669106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -3756,22 +3753,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 43
   canvas: {fileID: 1188046074}
---- !u!58 &281669109
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281669106}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &281669110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,7 +3824,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3866,6 +3847,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281669106}
   m_CullTransparentMesh: 0
+--- !u!58 &281669113
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281669106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &289741558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,8 +4333,8 @@ GameObject:
   - component: {fileID: 331048142}
   - component: {fileID: 331048141}
   - component: {fileID: 331048140}
-  - component: {fileID: 331048139}
   - component: {fileID: 331048143}
+  - component: {fileID: 331048144}
   m_Layer: 7
   m_Name: Button (Legacy) (2)
   m_TagString: Badge
@@ -4354,7 +4351,7 @@ RectTransform:
   m_GameObject: {fileID: 331048137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -4365,22 +4362,6 @@ RectTransform:
   m_AnchoredPosition: {x: -37.47, y: -19.55}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &331048139
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331048137}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &331048140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4452,7 +4433,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4496,6 +4477,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 2
   canvas: {fileID: 1188046074}
+--- !u!58 &331048144
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331048137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &334279337
 GameObject:
   m_ObjectHideFlags: 0
@@ -4884,8 +4881,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393296068}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -5014,8 +5011,8 @@ GameObject:
   - component: {fileID: 409543873}
   - component: {fileID: 409543872}
   - component: {fileID: 409543871}
-  - component: {fileID: 409543870}
   - component: {fileID: 409543869}
+  - component: {fileID: 409543874}
   m_Layer: 7
   m_Name: Button (Legacy) (19)
   m_TagString: Badge
@@ -5032,7 +5029,7 @@ RectTransform:
   m_GameObject: {fileID: 409543867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -5064,22 +5061,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 19
   canvas: {fileID: 1188046074}
---- !u!58 &409543870
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409543867}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &409543871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5151,7 +5132,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5174,6 +5155,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409543867}
   m_CullTransparentMesh: 0
+--- !u!58 &409543874
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409543867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!114 &415533795 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6369631490440704668, guid: 77f745aea5529478a899e2d6ea39fe5a, type: 3}
@@ -8210,8 +8207,8 @@ GameObject:
   - component: {fileID: 601674115}
   - component: {fileID: 601674114}
   - component: {fileID: 601674113}
-  - component: {fileID: 601674112}
   - component: {fileID: 601674111}
+  - component: {fileID: 601674116}
   m_Layer: 7
   m_Name: Button (Legacy) (24)
   m_TagString: Badge
@@ -8228,7 +8225,7 @@ RectTransform:
   m_GameObject: {fileID: 601674109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -8260,22 +8257,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 24
   canvas: {fileID: 1188046074}
---- !u!58 &601674112
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601674109}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &601674113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8347,7 +8328,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8370,6 +8351,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601674109}
   m_CullTransparentMesh: 0
+--- !u!58 &601674116
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601674109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &603212695
 GameObject:
   m_ObjectHideFlags: 0
@@ -8382,8 +8379,8 @@ GameObject:
   - component: {fileID: 603212700}
   - component: {fileID: 603212699}
   - component: {fileID: 603212698}
-  - component: {fileID: 603212697}
   - component: {fileID: 603212701}
+  - component: {fileID: 603212702}
   m_Layer: 7
   m_Name: Button (Legacy) (9)
   m_TagString: Badge
@@ -8400,7 +8397,7 @@ RectTransform:
   m_GameObject: {fileID: 603212695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -8411,22 +8408,6 @@ RectTransform:
   m_AnchoredPosition: {x: -22.42, y: -17.6}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &603212697
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603212695}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &603212698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8498,7 +8479,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8542,6 +8523,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 9
   canvas: {fileID: 1188046074}
+--- !u!58 &603212702
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603212695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &604183675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9096,8 +9093,8 @@ GameObject:
   - component: {fileID: 674004936}
   - component: {fileID: 674004935}
   - component: {fileID: 674004934}
-  - component: {fileID: 674004933}
   - component: {fileID: 674004932}
+  - component: {fileID: 674004937}
   m_Layer: 7
   m_Name: Button (Legacy) (14)
   m_TagString: Badge
@@ -9114,7 +9111,7 @@ RectTransform:
   m_GameObject: {fileID: 674004930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -9146,22 +9143,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 14
   canvas: {fileID: 1188046074}
---- !u!58 &674004933
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674004930}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &674004934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9233,7 +9214,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9256,6 +9237,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674004930}
   m_CullTransparentMesh: 0
+--- !u!58 &674004937
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674004930}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &690258881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9596,8 +9593,8 @@ GameObject:
   - component: {fileID: 708765735}
   - component: {fileID: 708765734}
   - component: {fileID: 708765733}
-  - component: {fileID: 708765732}
   - component: {fileID: 708765731}
+  - component: {fileID: 708765736}
   m_Layer: 7
   m_Name: Button (Legacy) (32)
   m_TagString: Badge
@@ -9614,7 +9611,7 @@ RectTransform:
   m_GameObject: {fileID: 708765729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -9646,22 +9643,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 32
   canvas: {fileID: 1188046074}
---- !u!58 &708765732
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708765729}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &708765733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9733,7 +9714,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9756,6 +9737,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708765729}
   m_CullTransparentMesh: 0
+--- !u!58 &708765736
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708765729}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &728073165
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,8 +10366,8 @@ GameObject:
   - component: {fileID: 779571978}
   - component: {fileID: 779571977}
   - component: {fileID: 779571976}
-  - component: {fileID: 779571975}
   - component: {fileID: 779571974}
+  - component: {fileID: 779571979}
   m_Layer: 7
   m_Name: Button (Legacy) (17)
   m_TagString: Badge
@@ -10387,7 +10384,7 @@ RectTransform:
   m_GameObject: {fileID: 779571972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -10419,22 +10416,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 17
   canvas: {fileID: 1188046074}
---- !u!58 &779571975
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779571972}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &779571976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10506,7 +10487,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10529,6 +10510,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779571972}
   m_CullTransparentMesh: 0
+--- !u!58 &779571979
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779571972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &791562934
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,8 +10823,8 @@ GameObject:
   - component: {fileID: 803672913}
   - component: {fileID: 803672912}
   - component: {fileID: 803672911}
-  - component: {fileID: 803672910}
   - component: {fileID: 803672909}
+  - component: {fileID: 803672914}
   m_Layer: 7
   m_Name: Button (Legacy) (23)
   m_TagString: Badge
@@ -10844,7 +10841,7 @@ RectTransform:
   m_GameObject: {fileID: 803672907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -10876,22 +10873,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 23
   canvas: {fileID: 1188046074}
---- !u!58 &803672910
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803672907}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &803672911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10963,7 +10944,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10986,6 +10967,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803672907}
   m_CullTransparentMesh: 0
+--- !u!58 &803672914
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803672907}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &804567982
 GameObject:
   m_ObjectHideFlags: 0
@@ -11431,8 +11428,8 @@ GameObject:
   - component: {fileID: 848424775}
   - component: {fileID: 848424774}
   - component: {fileID: 848424773}
-  - component: {fileID: 848424772}
   - component: {fileID: 848424771}
+  - component: {fileID: 848424776}
   m_Layer: 7
   m_Name: Button (Legacy) (41)
   m_TagString: Badge
@@ -11449,7 +11446,7 @@ RectTransform:
   m_GameObject: {fileID: 848424769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -11481,22 +11478,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 41
   canvas: {fileID: 1188046074}
---- !u!58 &848424772
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848424769}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &848424773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11568,7 +11549,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11591,6 +11572,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848424769}
   m_CullTransparentMesh: 0
+--- !u!58 &848424776
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848424769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &849618896
 GameObject:
   m_ObjectHideFlags: 0
@@ -12635,8 +12632,8 @@ GameObject:
   - component: {fileID: 954115145}
   - component: {fileID: 954115144}
   - component: {fileID: 954115143}
-  - component: {fileID: 954115142}
   - component: {fileID: 954115141}
+  - component: {fileID: 954115146}
   m_Layer: 7
   m_Name: Button (Legacy) (42)
   m_TagString: Badge
@@ -12653,7 +12650,7 @@ RectTransform:
   m_GameObject: {fileID: 954115139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -12685,22 +12682,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 42
   canvas: {fileID: 1188046074}
---- !u!58 &954115142
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954115139}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &954115143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12772,7 +12753,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12795,6 +12776,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954115139}
   m_CullTransparentMesh: 0
+--- !u!58 &954115146
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954115139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &958230348
 GameObject:
   m_ObjectHideFlags: 0
@@ -12944,8 +12941,8 @@ GameObject:
   - component: {fileID: 972620896}
   - component: {fileID: 972620895}
   - component: {fileID: 972620894}
-  - component: {fileID: 972620893}
   - component: {fileID: 972620892}
+  - component: {fileID: 972620897}
   m_Layer: 7
   m_Name: Button (Legacy) (16)
   m_TagString: Badge
@@ -12962,7 +12959,7 @@ RectTransform:
   m_GameObject: {fileID: 972620890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -12994,22 +12991,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 16
   canvas: {fileID: 1188046074}
---- !u!58 &972620893
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972620890}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &972620894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13081,7 +13062,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13104,6 +13085,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972620890}
   m_CullTransparentMesh: 0
+--- !u!58 &972620897
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972620890}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &977021802
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,8 +13189,8 @@ GameObject:
   - component: {fileID: 979071738}
   - component: {fileID: 979071737}
   - component: {fileID: 979071736}
-  - component: {fileID: 979071735}
   - component: {fileID: 979071734}
+  - component: {fileID: 979071739}
   m_Layer: 7
   m_Name: Button (Legacy) (47)
   m_TagString: Badge
@@ -13210,7 +13207,7 @@ RectTransform:
   m_GameObject: {fileID: 979071732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -13242,22 +13239,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 47
   canvas: {fileID: 1188046074}
---- !u!58 &979071735
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979071732}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &979071736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13329,7 +13310,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13352,6 +13333,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979071732}
   m_CullTransparentMesh: 0
+--- !u!58 &979071739
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979071732}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &993331264
 GameObject:
   m_ObjectHideFlags: 0
@@ -13364,8 +13361,8 @@ GameObject:
   - component: {fileID: 993331270}
   - component: {fileID: 993331269}
   - component: {fileID: 993331268}
-  - component: {fileID: 993331267}
   - component: {fileID: 993331266}
+  - component: {fileID: 993331271}
   m_Layer: 7
   m_Name: Button (Legacy) (39)
   m_TagString: Badge
@@ -13382,7 +13379,7 @@ RectTransform:
   m_GameObject: {fileID: 993331264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -13414,22 +13411,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 39
   canvas: {fileID: 1188046074}
---- !u!58 &993331267
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993331264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &993331268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13501,7 +13482,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13524,6 +13505,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993331264}
   m_CullTransparentMesh: 0
+--- !u!58 &993331271
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993331264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &994181868
 GameObject:
   m_ObjectHideFlags: 0
@@ -13959,8 +13956,8 @@ GameObject:
   - component: {fileID: 1012393654}
   - component: {fileID: 1012393653}
   - component: {fileID: 1012393652}
-  - component: {fileID: 1012393651}
   - component: {fileID: 1012393650}
+  - component: {fileID: 1012393655}
   m_Layer: 7
   m_Name: Button (Legacy) (13)
   m_TagString: Badge
@@ -13977,7 +13974,7 @@ RectTransform:
   m_GameObject: {fileID: 1012393648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -14009,22 +14006,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 13
   canvas: {fileID: 1188046074}
---- !u!58 &1012393651
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012393648}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1012393652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14096,7 +14077,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14119,6 +14100,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012393648}
   m_CullTransparentMesh: 0
+--- !u!58 &1012393655
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012393648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1012864656
 GameObject:
   m_ObjectHideFlags: 0
@@ -15272,8 +15269,8 @@ GameObject:
   - component: {fileID: 1143109551}
   - component: {fileID: 1143109550}
   - component: {fileID: 1143109549}
-  - component: {fileID: 1143109548}
   - component: {fileID: 1143109552}
+  - component: {fileID: 1143109553}
   m_Layer: 7
   m_Name: Button (Legacy) (5)
   m_TagString: Badge
@@ -15290,7 +15287,7 @@ RectTransform:
   m_GameObject: {fileID: 1143109546}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -15301,22 +15298,6 @@ RectTransform:
   m_AnchoredPosition: {x: -37.42, y: -15.72}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &1143109548
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143109546}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1143109549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15388,7 +15369,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15432,6 +15413,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 5
   canvas: {fileID: 1188046074}
+--- !u!58 &1143109553
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143109546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1148440115
 GameObject:
   m_ObjectHideFlags: 0
@@ -15444,8 +15441,8 @@ GameObject:
   - component: {fileID: 1148440120}
   - component: {fileID: 1148440119}
   - component: {fileID: 1148440118}
-  - component: {fileID: 1148440117}
   - component: {fileID: 1148440121}
+  - component: {fileID: 1148440122}
   m_Layer: 7
   m_Name: Button (Legacy) (1)
   m_TagString: Badge
@@ -15462,7 +15459,7 @@ RectTransform:
   m_GameObject: {fileID: 1148440115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -15473,22 +15470,6 @@ RectTransform:
   m_AnchoredPosition: {x: -41.83, y: -17.73}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &1148440117
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148440115}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1148440118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15560,7 +15541,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15604,6 +15585,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 1
   canvas: {fileID: 1188046074}
+--- !u!58 &1148440122
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148440115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1165380942
 GameObject:
   m_ObjectHideFlags: 0
@@ -15753,8 +15750,8 @@ GameObject:
   - component: {fileID: 1166746756}
   - component: {fileID: 1166746755}
   - component: {fileID: 1166746754}
-  - component: {fileID: 1166746753}
   - component: {fileID: 1166746757}
+  - component: {fileID: 1166746758}
   m_Layer: 7
   m_Name: Button (Legacy) (6)
   m_TagString: Badge
@@ -15771,7 +15768,7 @@ RectTransform:
   m_GameObject: {fileID: 1166746751}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -15782,22 +15779,6 @@ RectTransform:
   m_AnchoredPosition: {x: -39.88, y: -16.64}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &1166746753
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166746751}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1166746754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15869,7 +15850,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15913,6 +15894,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 6
   canvas: {fileID: 1188046074}
+--- !u!58 &1166746758
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166746751}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1181687933
 GameObject:
   m_ObjectHideFlags: 0
@@ -16343,8 +16340,8 @@ GameObject:
   - component: {fileID: 1223508981}
   - component: {fileID: 1223508980}
   - component: {fileID: 1223508979}
-  - component: {fileID: 1223508982}
   - component: {fileID: 1223508983}
+  - component: {fileID: 1223508984}
   m_Layer: 7
   m_Name: badge1
   m_TagString: Badge
@@ -16361,7 +16358,7 @@ RectTransform:
   m_GameObject: {fileID: 1223508977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.01, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -16443,7 +16440,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16466,22 +16463,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223508977}
   m_CullTransparentMesh: 0
---- !u!58 &1223508982
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223508977}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1223508983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16503,6 +16484,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 0
   canvas: {fileID: 1188046074}
+--- !u!58 &1223508984
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223508977}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1231457788
 GameObject:
   m_ObjectHideFlags: 0
@@ -16515,8 +16512,8 @@ GameObject:
   - component: {fileID: 1231457794}
   - component: {fileID: 1231457793}
   - component: {fileID: 1231457792}
-  - component: {fileID: 1231457791}
   - component: {fileID: 1231457790}
+  - component: {fileID: 1231457795}
   m_Layer: 7
   m_Name: Button (Legacy) (36)
   m_TagString: Badge
@@ -16533,7 +16530,7 @@ RectTransform:
   m_GameObject: {fileID: 1231457788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -16565,22 +16562,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 36
   canvas: {fileID: 1188046074}
---- !u!58 &1231457791
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231457788}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1231457792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16652,7 +16633,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16675,6 +16656,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231457788}
   m_CullTransparentMesh: 0
+--- !u!58 &1231457795
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231457788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1238463144
 GameObject:
   m_ObjectHideFlags: 0
@@ -16763,8 +16760,8 @@ GameObject:
   - component: {fileID: 1251042387}
   - component: {fileID: 1251042386}
   - component: {fileID: 1251042385}
-  - component: {fileID: 1251042384}
   - component: {fileID: 1251042383}
+  - component: {fileID: 1251042388}
   m_Layer: 7
   m_Name: Button (Legacy) (21)
   m_TagString: Badge
@@ -16781,7 +16778,7 @@ RectTransform:
   m_GameObject: {fileID: 1251042381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -16813,22 +16810,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 21
   canvas: {fileID: 1188046074}
---- !u!58 &1251042384
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1251042381}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1251042385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16900,7 +16881,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16923,6 +16904,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251042381}
   m_CullTransparentMesh: 0
+--- !u!58 &1251042388
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251042381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1257000995
 GameObject:
   m_ObjectHideFlags: 0
@@ -17131,7 +17128,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -17255,8 +17252,8 @@ GameObject:
   - component: {fileID: 1263689157}
   - component: {fileID: 1263689156}
   - component: {fileID: 1263689155}
-  - component: {fileID: 1263689154}
   - component: {fileID: 1263689153}
+  - component: {fileID: 1263689158}
   m_Layer: 7
   m_Name: Button (Legacy) (37)
   m_TagString: Badge
@@ -17273,7 +17270,7 @@ RectTransform:
   m_GameObject: {fileID: 1263689151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -17305,22 +17302,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 37
   canvas: {fileID: 1188046074}
---- !u!58 &1263689154
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263689151}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1263689155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17392,7 +17373,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17415,6 +17396,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263689151}
   m_CullTransparentMesh: 0
+--- !u!58 &1263689158
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263689151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1268904697
 GameObject:
   m_ObjectHideFlags: 0
@@ -17636,8 +17633,8 @@ GameObject:
   - component: {fileID: 1272222788}
   - component: {fileID: 1272222787}
   - component: {fileID: 1272222786}
-  - component: {fileID: 1272222785}
   - component: {fileID: 1272222784}
+  - component: {fileID: 1272222789}
   m_Layer: 7
   m_Name: Button (Legacy) (10)
   m_TagString: Badge
@@ -17654,7 +17651,7 @@ RectTransform:
   m_GameObject: {fileID: 1272222782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -17686,22 +17683,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 10
   canvas: {fileID: 1188046074}
---- !u!58 &1272222785
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272222782}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1272222786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17773,7 +17754,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17796,6 +17777,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272222782}
   m_CullTransparentMesh: 0
+--- !u!58 &1272222789
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272222782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1274246936
 GameObject:
   m_ObjectHideFlags: 0
@@ -18097,8 +18094,8 @@ GameObject:
   - component: {fileID: 1300102842}
   - component: {fileID: 1300102841}
   - component: {fileID: 1300102840}
-  - component: {fileID: 1300102839}
   - component: {fileID: 1300102838}
+  - component: {fileID: 1300102843}
   m_Layer: 7
   m_Name: Button (Legacy) (12)
   m_TagString: Badge
@@ -18115,7 +18112,7 @@ RectTransform:
   m_GameObject: {fileID: 1300102836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -18147,22 +18144,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 12
   canvas: {fileID: 1188046074}
---- !u!58 &1300102839
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300102836}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1300102840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18234,7 +18215,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -18257,6 +18238,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300102836}
   m_CullTransparentMesh: 0
+--- !u!58 &1300102843
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300102836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1308017677
 GameObject:
   m_ObjectHideFlags: 0
@@ -19406,8 +19403,8 @@ GameObject:
   - component: {fileID: 1359700954}
   - component: {fileID: 1359700953}
   - component: {fileID: 1359700952}
-  - component: {fileID: 1359700951}
   - component: {fileID: 1359700955}
+  - component: {fileID: 1359700956}
   m_Layer: 7
   m_Name: Button (Legacy) (7)
   m_TagString: Badge
@@ -19424,7 +19421,7 @@ RectTransform:
   m_GameObject: {fileID: 1359700949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -19435,22 +19432,6 @@ RectTransform:
   m_AnchoredPosition: {x: -33.76, y: -5.68}
   m_SizeDelta: {x: 78, y: 36.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!58 &1359700951
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359700949}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1359700952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19522,7 +19503,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19566,6 +19547,22 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 7
   canvas: {fileID: 1188046074}
+--- !u!58 &1359700956
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359700949}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1374290195
 GameObject:
   m_ObjectHideFlags: 0
@@ -19734,8 +19731,8 @@ GameObject:
   - component: {fileID: 1398718520}
   - component: {fileID: 1398718519}
   - component: {fileID: 1398718518}
-  - component: {fileID: 1398718517}
   - component: {fileID: 1398718516}
+  - component: {fileID: 1398718521}
   m_Layer: 7
   m_Name: Button (Legacy) (28)
   m_TagString: Badge
@@ -19752,7 +19749,7 @@ RectTransform:
   m_GameObject: {fileID: 1398718514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -19784,22 +19781,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 28
   canvas: {fileID: 1188046074}
---- !u!58 &1398718517
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398718514}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1398718518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19871,7 +19852,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19894,6 +19875,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398718514}
   m_CullTransparentMesh: 0
+--- !u!58 &1398718521
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398718514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1400760050
 GameObject:
   m_ObjectHideFlags: 0
@@ -20190,7 +20187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4.1, y: 4.32}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1464501849
@@ -20205,8 +20202,8 @@ GameObject:
   - component: {fileID: 1464501855}
   - component: {fileID: 1464501854}
   - component: {fileID: 1464501853}
-  - component: {fileID: 1464501852}
   - component: {fileID: 1464501851}
+  - component: {fileID: 1464501856}
   m_Layer: 7
   m_Name: Button (Legacy) (33)
   m_TagString: Badge
@@ -20223,7 +20220,7 @@ RectTransform:
   m_GameObject: {fileID: 1464501849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -20255,22 +20252,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 33
   canvas: {fileID: 1188046074}
---- !u!58 &1464501852
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464501849}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1464501853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20342,7 +20323,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20365,6 +20346,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464501849}
   m_CullTransparentMesh: 0
+--- !u!58 &1464501856
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464501849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1475080834
 GameObject:
   m_ObjectHideFlags: 0
@@ -20788,8 +20785,8 @@ GameObject:
   - component: {fileID: 1510144926}
   - component: {fileID: 1510144925}
   - component: {fileID: 1510144924}
-  - component: {fileID: 1510144923}
   - component: {fileID: 1510144922}
+  - component: {fileID: 1510144927}
   m_Layer: 7
   m_Name: Button (Legacy) (35)
   m_TagString: Badge
@@ -20806,7 +20803,7 @@ RectTransform:
   m_GameObject: {fileID: 1510144920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -20838,22 +20835,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 35
   canvas: {fileID: 1188046074}
---- !u!58 &1510144923
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510144920}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1510144924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20925,7 +20906,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20948,6 +20929,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510144920}
   m_CullTransparentMesh: 0
+--- !u!58 &1510144927
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510144920}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1536798756
 GameObject:
   m_ObjectHideFlags: 0
@@ -21173,8 +21170,8 @@ GameObject:
   - component: {fileID: 1555698114}
   - component: {fileID: 1555698113}
   - component: {fileID: 1555698112}
-  - component: {fileID: 1555698111}
   - component: {fileID: 1555698110}
+  - component: {fileID: 1555698115}
   m_Layer: 7
   m_Name: Button (Legacy) (27)
   m_TagString: Badge
@@ -21191,7 +21188,7 @@ RectTransform:
   m_GameObject: {fileID: 1555698108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -21223,22 +21220,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 27
   canvas: {fileID: 1188046074}
---- !u!58 &1555698111
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555698108}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1555698112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21310,7 +21291,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -21333,6 +21314,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555698108}
   m_CullTransparentMesh: 0
+--- !u!58 &1555698115
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555698108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1557809763
 GameObject:
   m_ObjectHideFlags: 0
@@ -21636,8 +21633,8 @@ GameObject:
   - component: {fileID: 1621907278}
   - component: {fileID: 1621907277}
   - component: {fileID: 1621907276}
-  - component: {fileID: 1621907275}
   - component: {fileID: 1621907274}
+  - component: {fileID: 1621907279}
   m_Layer: 7
   m_Name: Button (Legacy) (49)
   m_TagString: Badge
@@ -21654,7 +21651,7 @@ RectTransform:
   m_GameObject: {fileID: 1621907272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -21686,22 +21683,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 49
   canvas: {fileID: 1188046074}
---- !u!58 &1621907275
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621907272}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1621907276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21773,7 +21754,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -21796,6 +21777,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621907272}
   m_CullTransparentMesh: 0
+--- !u!58 &1621907279
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621907272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1624660732
 GameObject:
   m_ObjectHideFlags: 0
@@ -22657,8 +22654,8 @@ GameObject:
   - component: {fileID: 1687786722}
   - component: {fileID: 1687786721}
   - component: {fileID: 1687786720}
-  - component: {fileID: 1687786719}
   - component: {fileID: 1687786718}
+  - component: {fileID: 1687786723}
   m_Layer: 7
   m_Name: Button (Legacy) (46)
   m_TagString: Badge
@@ -22675,7 +22672,7 @@ RectTransform:
   m_GameObject: {fileID: 1687786716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -22707,22 +22704,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 46
   canvas: {fileID: 1188046074}
---- !u!58 &1687786719
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687786716}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1687786720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22794,7 +22775,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -22817,6 +22798,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687786716}
   m_CullTransparentMesh: 0
+--- !u!58 &1687786723
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687786716}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1691144022
 GameObject:
   m_ObjectHideFlags: 0
@@ -22829,8 +22826,8 @@ GameObject:
   - component: {fileID: 1691144028}
   - component: {fileID: 1691144027}
   - component: {fileID: 1691144026}
-  - component: {fileID: 1691144025}
   - component: {fileID: 1691144024}
+  - component: {fileID: 1691144029}
   m_Layer: 7
   m_Name: Button (Legacy) (40)
   m_TagString: Badge
@@ -22847,7 +22844,7 @@ RectTransform:
   m_GameObject: {fileID: 1691144022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -22879,22 +22876,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 40
   canvas: {fileID: 1188046074}
---- !u!58 &1691144025
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691144022}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1691144026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22966,7 +22947,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -22989,6 +22970,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691144022}
   m_CullTransparentMesh: 0
+--- !u!58 &1691144029
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691144022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1701936624
 GameObject:
   m_ObjectHideFlags: 0
@@ -23198,8 +23195,8 @@ GameObject:
   - component: {fileID: 1712163094}
   - component: {fileID: 1712163093}
   - component: {fileID: 1712163092}
-  - component: {fileID: 1712163091}
   - component: {fileID: 1712163090}
+  - component: {fileID: 1712163095}
   m_Layer: 7
   m_Name: Button (Legacy) (45)
   m_TagString: Badge
@@ -23216,7 +23213,7 @@ RectTransform:
   m_GameObject: {fileID: 1712163088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -23248,22 +23245,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 45
   canvas: {fileID: 1188046074}
---- !u!58 &1712163091
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712163088}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1712163092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23335,7 +23316,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23358,6 +23339,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712163088}
   m_CullTransparentMesh: 0
+--- !u!58 &1712163095
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712163088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1719707264
 GameObject:
   m_ObjectHideFlags: 0
@@ -23468,8 +23465,8 @@ GameObject:
   - component: {fileID: 1739393227}
   - component: {fileID: 1739393226}
   - component: {fileID: 1739393225}
-  - component: {fileID: 1739393224}
   - component: {fileID: 1739393223}
+  - component: {fileID: 1739393228}
   m_Layer: 7
   m_Name: Button (Legacy) (31)
   m_TagString: Badge
@@ -23486,7 +23483,7 @@ RectTransform:
   m_GameObject: {fileID: 1739393221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -23518,22 +23515,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 31
   canvas: {fileID: 1188046074}
---- !u!58 &1739393224
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739393221}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1739393225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23605,7 +23586,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23628,6 +23609,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739393221}
   m_CullTransparentMesh: 0
+--- !u!58 &1739393228
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739393221}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1749789504
 GameObject:
   m_ObjectHideFlags: 0
@@ -23777,8 +23774,8 @@ GameObject:
   - component: {fileID: 1759818536}
   - component: {fileID: 1759818535}
   - component: {fileID: 1759818534}
-  - component: {fileID: 1759818533}
   - component: {fileID: 1759818532}
+  - component: {fileID: 1759818537}
   m_Layer: 7
   m_Name: Button (Legacy) (15)
   m_TagString: Badge
@@ -23795,7 +23792,7 @@ RectTransform:
   m_GameObject: {fileID: 1759818530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -23827,22 +23824,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 15
   canvas: {fileID: 1188046074}
---- !u!58 &1759818533
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759818530}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1759818534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23914,7 +23895,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23937,6 +23918,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759818530}
   m_CullTransparentMesh: 0
+--- !u!58 &1759818537
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759818530}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1760921985
 GameObject:
   m_ObjectHideFlags: 0
@@ -24416,8 +24413,8 @@ GameObject:
   - component: {fileID: 1783099543}
   - component: {fileID: 1783099542}
   - component: {fileID: 1783099541}
-  - component: {fileID: 1783099540}
   - component: {fileID: 1783099539}
+  - component: {fileID: 1783099544}
   m_Layer: 7
   m_Name: Button (Legacy) (26)
   m_TagString: Badge
@@ -24434,7 +24431,7 @@ RectTransform:
   m_GameObject: {fileID: 1783099537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -24466,22 +24463,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 26
   canvas: {fileID: 1188046074}
---- !u!58 &1783099540
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783099537}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1783099541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24553,7 +24534,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -24576,6 +24557,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783099537}
   m_CullTransparentMesh: 0
+--- !u!58 &1783099544
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783099537}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1786392318
 GameObject:
   m_ObjectHideFlags: 0
@@ -24798,8 +24795,8 @@ GameObject:
   - component: {fileID: 1812950581}
   - component: {fileID: 1812950580}
   - component: {fileID: 1812950579}
-  - component: {fileID: 1812950578}
   - component: {fileID: 1812950577}
+  - component: {fileID: 1812950582}
   m_Layer: 7
   m_Name: Button (Legacy) (48)
   m_TagString: Badge
@@ -24816,7 +24813,7 @@ RectTransform:
   m_GameObject: {fileID: 1812950575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -24848,22 +24845,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 48
   canvas: {fileID: 1188046074}
---- !u!58 &1812950578
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812950575}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1812950579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24935,7 +24916,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -24958,6 +24939,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812950575}
   m_CullTransparentMesh: 0
+--- !u!58 &1812950582
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812950575}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1826141020
 GameObject:
   m_ObjectHideFlags: 0
@@ -25497,8 +25494,8 @@ GameObject:
   - component: {fileID: 1871045051}
   - component: {fileID: 1871045050}
   - component: {fileID: 1871045049}
-  - component: {fileID: 1871045048}
   - component: {fileID: 1871045047}
+  - component: {fileID: 1871045052}
   m_Layer: 7
   m_Name: Button (Legacy) (18)
   m_TagString: Badge
@@ -25515,7 +25512,7 @@ RectTransform:
   m_GameObject: {fileID: 1871045045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -25547,22 +25544,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 18
   canvas: {fileID: 1188046074}
---- !u!58 &1871045048
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871045045}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1871045049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25634,7 +25615,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25657,6 +25638,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871045045}
   m_CullTransparentMesh: 0
+--- !u!58 &1871045052
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871045045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1874309298
 GameObject:
   m_ObjectHideFlags: 0
@@ -25667,6 +25664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874309299}
   - component: {fileID: 1874309300}
+  - component: {fileID: 1874309301}
   m_Layer: 7
   m_Name: BadgesCanvas
   m_TagString: Untagged
@@ -25716,6 +25714,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1874309301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874309298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1875330072
 GameObject:
   m_ObjectHideFlags: 0
@@ -25939,8 +25954,8 @@ GameObject:
   - component: {fileID: 1910828526}
   - component: {fileID: 1910828525}
   - component: {fileID: 1910828524}
-  - component: {fileID: 1910828523}
   - component: {fileID: 1910828522}
+  - component: {fileID: 1910828527}
   m_Layer: 7
   m_Name: Button (Legacy) (44)
   m_TagString: Badge
@@ -25957,7 +25972,7 @@ RectTransform:
   m_GameObject: {fileID: 1910828520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -25989,22 +26004,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 44
   canvas: {fileID: 1188046074}
---- !u!58 &1910828523
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910828520}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1910828524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26076,7 +26075,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -26099,6 +26098,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910828520}
   m_CullTransparentMesh: 0
+--- !u!58 &1910828527
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910828520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1916832314
 GameObject:
   m_ObjectHideFlags: 0
@@ -27046,8 +27061,8 @@ GameObject:
   - component: {fileID: 1979998175}
   - component: {fileID: 1979998174}
   - component: {fileID: 1979998173}
-  - component: {fileID: 1979998172}
   - component: {fileID: 1979998171}
+  - component: {fileID: 1979998176}
   m_Layer: 7
   m_Name: Button (Legacy) (38)
   m_TagString: Badge
@@ -27064,7 +27079,7 @@ RectTransform:
   m_GameObject: {fileID: 1979998169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -27096,22 +27111,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 38
   canvas: {fileID: 1188046074}
---- !u!58 &1979998172
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979998169}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &1979998173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27183,7 +27182,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27206,6 +27205,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979998169}
   m_CullTransparentMesh: 0
+--- !u!58 &1979998176
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979998169}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &1984884582
 GameObject:
   m_ObjectHideFlags: 0
@@ -28085,8 +28100,8 @@ GameObject:
   - component: {fileID: 2062658916}
   - component: {fileID: 2062658915}
   - component: {fileID: 2062658914}
-  - component: {fileID: 2062658913}
   - component: {fileID: 2062658912}
+  - component: {fileID: 2062658917}
   m_Layer: 7
   m_Name: Button (Legacy) (22)
   m_TagString: Badge
@@ -28103,7 +28118,7 @@ RectTransform:
   m_GameObject: {fileID: 2062658910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009999999, y: 0.035, z: 108}
+  m_LocalScale: {x: 0.009999999, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1450454477}
@@ -28135,22 +28150,6 @@ MonoBehaviour:
   quizMg: {fileID: 1268904698}
   num: 22
   canvas: {fileID: 1188046074}
---- !u!58 &2062658913
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062658910}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 27.55
 --- !u!114 &2062658914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28222,7 +28221,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -100, y: -100, z: 100, w: 100}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -28245,6 +28244,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062658910}
   m_CullTransparentMesh: 0
+--- !u!58 &2062658917
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062658910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 20
 --- !u!1 &2065193829
 GameObject:
   m_ObjectHideFlags: 0

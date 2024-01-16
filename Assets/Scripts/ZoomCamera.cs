@@ -67,11 +67,7 @@ public class ZoomCamera : MonoBehaviour
         {
             case 1:
                 _Camera.orthographicSize = 13.0f;
-                if (_badge == null)
-                {
-                    //_badge.SetActive(false);
-                }
-                else
+                if (_badge != null)
                 {
                     _badge.SetActive(false);
                 }
@@ -79,11 +75,7 @@ public class ZoomCamera : MonoBehaviour
                 break;
             case 2:
                 _Camera.orthographicSize = 7.0f;
-                if (_badge == null)
-                {
-                    //_badge.SetActive(true);
-                }
-                else
+                if (_badge != null)
                 {
                     _badge.SetActive(true);
                 }

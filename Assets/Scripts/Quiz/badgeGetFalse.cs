@@ -10,6 +10,6 @@ public class badgeGetFalse : MonoBehaviour
         QuizMg.instance.Getbadge[QuizMg.instance.numGet].SetActive(false);
         _obj.SetActive(false);
         // 移動可能フラグを有効化
-        TrackingMousePosition.instace.UIButtomExit();
+        TrackingMousePosition.Instance.UIButtomExit();
     }
 }

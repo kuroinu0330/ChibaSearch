@@ -2,10 +2,27 @@ using UnityEngine;
 using System;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEditor.SceneManagement;
 
 public class TrackingMousePosition : MonoBehaviour
 {
-    public static TrackingMousePosition instace;
+    private static TrackingMousePosition _instance;
+    public static TrackingMousePosition Instance
+    {
+        get{
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<TrackingMousePosition>();
+
+                if (_instance == null)
+                {
+                    var obj = new GameObject("TrackingMousePosition");
+                    _instance = obj.AddComponent<TrackingMousePosition>();
+                }
+            }
+            return _instance;
+        }
+    }
     /// <summary>
     /// マウスポインターを投影するCanvasコンポーネントの参照
     /// </summary>
@@ -59,14 +76,6 @@ public class TrackingMousePosition : MonoBehaviour
         Map
     }
 
-    private void Awake()
-    {
-        if (instace == null)
-        {
-            instace = this;
-        }
-    }
-
     // public enum LeftRightKey
     // {
     //     Left,
@@ -77,127 +86,8 @@ public class TrackingMousePosition : MonoBehaviour
 
     void Update()
     {
-        // if (Application.isEditor)
-        // switch (LRKey)
-        // {
-        //     case LeftRightKey.Left:
-        //         if (Input.touchCount > 0)
-        //         {
-        //             if (Input.touchCount == 1)
-        //             {
-        //                 touch = Input.GetTouch(0);
-        //
-        //                 MapisActive = false;
-        //                 Vector3 mousePosition = touch.position;
-        //                 if (mousePosition.x > 0.15f * Screen.width && outLens((Vector2)mousePosition))
-        //                 {
-        //                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-        //                     target.z = _cursorAllTrans.position.z;
-        //                     _cursorAllTrans.position = target;
-        //                 }
-        //             }
-        //             else if (Input.touchCount == 2)
-        //             {
-        //                 touch = Input.GetTouch(0);
-        //
-        //                 MapisActive = true;
-        //                 Vector3 mousePosition = touch.position;
-        //             }
-        //         }
-        //         else
-        //         {
-        //             if (isActiveflag)
-        //             {
-        //                 // CanvasのRectTransform内にあるマウスの座標をローカル座標に変換する
-        //                 RectTransformUtility.ScreenPointToLocalPointInRectangle(
-        //                     _mapCanvas,
-        //                     Input.mousePosition,
-        //                     _canvas.worldCamera,
-        //                     out var mousePosition);
-        //
-        //                 // ポインターをマウスの座標に移動する
-        //                 _cursorTransform.anchoredPosition = new Vector2(mousePosition.x, mousePosition.y);
-        //             }
-        //             if (Input.GetMouseButton(0))
-        //             {
-        //                 MapisActive = false;
-        //                 Vector3 mousePosition = Input.mousePosition;
-        //                 //Debug.Log(mousePosition.x + ":" + mousePosition.y);
-        //                 if (mousePosition.x > 0.15f * Screen.width && outLens((Vector2)mousePosition))
-        //                 {
-        //                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-        //                     target.z = _cursorAllTrans.position.z;
-        //                     _cursorAllTrans.position = target;
-        //                 }
-        //             }
-        //             else if (Input.GetMouseButtonUp(0))
-        //             {
-        //                 /*_cursorAllTrans.transform.SetParent(_mapCanvas);*/
-        //                 MapisActive = true;
-        //             }
-        //         }
-        //         break;
-        //     case LeftRightKey.Right:
-        //         if (Input.touchCount > 0)
-        //         {
-        //             if (Input.touchCount == 1)
-        //             {
-        //                 touch = Input.GetTouch(0);
-        //
-        //                 MapisActive = false;
-        //                 Vector3 mousePosition = touch.position;
-        //                 if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
-        //                 {
-        //                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-        //                     target.z = _cursorAllTrans.position.z;
-        //                     _cursorAllTrans.position = target;
-        //                 }
-        //             }
-        //             else if (Input.touchCount == 2)
-        //             {
-        //                 touch = Input.GetTouch(0);
-        //
-        //                 MapisActive = true;
-        //                 Vector3 mousePosition = touch.position;
-        //             }
-        //         }
-        //         else
-        //         {
-        //             if (isActiveflag)
-        //             {
-        //                 // CanvasのRectTransform内にあるマウスの座標をローカル座標に変換する
-        //                 RectTransformUtility.ScreenPointToLocalPointInRectangle(
-        //                     _mapCanvas,
-        //                     Input.mousePosition,
-        //                     _canvas.worldCamera,
-        //                     out var mousePosition);
-        //
-        //                 // ポインターをマウスの座標に移動する
-        //                 _cursorTransform.anchoredPosition = new Vector2(mousePosition.x, mousePosition.y);
-        //             }
-        //             if (Input.GetMouseButton(0))
-        //             {
-        //                 MapisActive = false;
-        //                 Vector3 mousePosition = Input.mousePosition;
-        //                 //Debug.Log(mousePosition.x + ":" + mousePosition.y);
-        //                 if (mousePosition.x < 0.85f * Screen.width && outLens((Vector2)mousePosition))
-        //                 {
-        //                     Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-        //                     target.z = _cursorAllTrans.position.z;
-        //                     _cursorAllTrans.position = target;
-        //                 }
-        //             }
-        //             else if (Input.GetMouseButtonUp(0))
-        //             {
-        //                 /*_cursorAllTrans.transform.SetParent(_mapCanvas);*/
-        //                 MapisActive = true;
-        //             }
-        //         }
-        //         break;
-        // }
-        
         // 画面にタッチされている指が1本以上あり且つ「canMoveFlag」がTrueに場合以下の処理を実行
-        if (Input.touchCount > 0 && canMoveFlag)
+        if (Input.touchCount < 0 && canMoveFlag)
         {
             // 1本目の指をトラッキング
             touch = Input.GetTouch(0);
@@ -214,7 +104,7 @@ public class TrackingMousePosition : MonoBehaviour
                     moveType = MoveType.Lenz;
 
                     // 指の座標がレンズの外側だった場合以下の処理を実行
-                    if (outLens((Vector2)mousePosition))
+                    if (OutLens((Vector2)mousePosition))
                     {
                         // 「mousePosition」をスクリーン上の座標に変換して「target」に代入
                         Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
@@ -273,7 +163,7 @@ public class TrackingMousePosition : MonoBehaviour
                 {
                     // 移動モードが「Lenz」の場合以下の処理を実行
                     case MoveType.Lenz:
-                        if (outLens((Vector2)mousePosition))
+                        if (OutLens((Vector2)mousePosition))
                         {
                             Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
                             target.z = _cursorAllTrans.position.z;
@@ -288,7 +178,9 @@ public class TrackingMousePosition : MonoBehaviour
         }
     }
 
-    private bool outLens(Vector3 pos)
+
+
+    private bool OutLens(Vector3 pos)
     {
         Vector2 dis = (Vector2)lensPosition.position - (Vector2)_camera.ScreenToWorldPoint(pos);
 
