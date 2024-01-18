@@ -11,7 +11,7 @@ public class AppEnd : MonoBehaviour
     public void EndClick()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 0);
-        SceneManager.LoadScene("Titel");
+        SceneManager.LoadScene("Title");
         //Application.Quit();
     }
 }
