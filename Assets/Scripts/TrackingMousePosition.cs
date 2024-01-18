@@ -1,8 +1,4 @@
 using UnityEngine;
-using System;
-using UnityEditor;
-using UnityEngine.UI;
-using UnityEditor.SceneManagement;
 
 public class TrackingMousePosition : MonoBehaviour
 {
