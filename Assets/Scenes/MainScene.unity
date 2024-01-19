@@ -20107,6 +20107,9 @@ MonoBehaviour:
   - {fileID: 849618896}
   - {fileID: 547889556}
   - {fileID: 1238463144}
+  _musimegane: {fileID: 200539049}
+  _mainCamera: {fileID: 705696750}
+  _zoomCamera: {fileID: 1258219704}
 --- !u!4 &1268904699
 Transform:
   m_ObjectHideFlags: 0
@@ -36648,7 +36651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4279838567331761977
 RectTransform:
   m_ObjectHideFlags: 0
