@@ -18,31 +18,59 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (trackingMousePosition.MapisActive == true) {
+        //if (trackingMousePosition.MapisActive == true) 
+        if (trackingMousePosition.moveType == TrackingMousePosition.MoveType.Map)
+        {
             //if(_rectTransform.)
             //Debug.Log(eventData);
             Vector2 vec = eventData.delta;
 
-            if (_rectTransform.anchoredPosition.x >= 27900)
+            // if (_rectTransform.anchoredPosition.x >= 27900)
+            // {
+            //     vec = new Vector2(-1f, vec.y);
+            // }
+            // else if (_rectTransform.anchoredPosition.x <= -27900)
+            // {
+            //     vec = new Vector2(1f, vec.y);
+            // }
+            //
+            // if (_rectTransform.anchoredPosition.y >= 19590)
+            // {
+            //     vec = new Vector2(vec.x, -1f);
+            //
+            // }
+            // else if (_rectTransform.anchoredPosition.y <= -19590)
+            // {
+            //     vec = new Vector2(vec.x, 1f);
+            // }
+            
+            // 移動量を表すベクター
+            Vector2 Movement = vec * _speed;
+            
+            if (_rectTransform.anchoredPosition.x + Movement.x >= 27900)
             {
-                vec = new Vector2(-1f, vec.y);
+                Movement = new Vector2(0f, Movement.y);
+                _rectTransform.anchoredPosition = new Vector2(27899, _rectTransform.anchoredPosition.y);
             }
-            else if (_rectTransform.anchoredPosition.x <= -27900)
+            else if (_rectTransform.anchoredPosition.x + Movement.x <= -27900)
             {
-                vec = new Vector2(1f, vec.y);
+                Movement = new Vector2(0f, Movement.y);
+                _rectTransform.anchoredPosition = new Vector2(-27899, _rectTransform.anchoredPosition.y);
             }
 
-            if (_rectTransform.anchoredPosition.y >= 19590)
+            if (_rectTransform.anchoredPosition.y + Movement.y >= 19585)
             {
-                vec = new Vector2(vec.x, -1f);
-
+                Movement = new Vector2(Movement.x, 0f);
+                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, 19584);
             }
-            else if (_rectTransform.anchoredPosition.y <= -19590)
+            else if (_rectTransform.anchoredPosition.y + Movement.y <= -19585)
             {
-                vec = new Vector2(vec.x, 1f);
+                Movement = new Vector2(Movement.x, 0f);
+                _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, -19584);
             }
 
-            _rectTransform.anchoredPosition += vec * _speed;
+            //_rectTransform.anchoredPosition += vec * _speed;
+            _rectTransform.anchoredPosition += Movement;
         }
 
     }

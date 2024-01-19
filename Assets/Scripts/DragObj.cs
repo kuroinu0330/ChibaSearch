@@ -5,17 +5,17 @@ using UnityEngine;
 public class mouseDrag : MonoBehaviour
 {
     
-    //ƒIƒuƒWƒFƒNƒg‚ğƒNƒŠƒbƒN‚µ‚Äƒhƒ‰ƒbƒOó‘Ô‚É‚ ‚éŠÔŒÄ‚Ño‚³‚ê‚éŠÖ”iUnity‚Ìƒ}ƒEƒXƒCƒxƒ“ƒgj
+    //ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½Äƒhï¿½ï¿½ï¿½bï¿½Oï¿½ï¿½Ô‚É‚ï¿½ï¿½ï¿½ÔŒÄ‚Ñoï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½iUnityï¿½Ìƒ}ï¿½Eï¿½Xï¿½Cï¿½xï¿½ï¿½ï¿½gï¿½j
     void OnMouseDrag()
     {
-        //ƒ}ƒEƒXƒJ[ƒ\ƒ‹‹y‚ÑƒIƒuƒWƒFƒNƒg‚ÌƒXƒNƒŠ[ƒ“À•W‚ğæ“¾
+        //ï¿½}ï¿½Eï¿½Xï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½yï¿½ÑƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ÌƒXï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½æ“¾
         Vector3 objectScreenPoint =
             new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100);
 
-        //ƒXƒNƒŠ[ƒ“À•W‚ğƒ[ƒ‹ƒhÀ•W‚É•ÏŠ·
+        //ï¿½Xï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½Wï¿½É•ÏŠï¿½
         Vector3 objectWorldPoint = Camera.main.ScreenToWorldPoint(objectScreenPoint);
 
-        //ƒIƒuƒWƒFƒNƒg‚ÌÀ•W‚ğ•ÏX‚·‚é
+        //ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½Ìï¿½ï¿½Wï¿½ï¿½ÏXï¿½ï¿½ï¿½ï¿½
         transform.position = objectWorldPoint;
     }
     
@@ -30,9 +30,9 @@ using UnityEngine.UI;
 public class DragObj : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
 
-    private Vector2 prevPos; //•Û‘¶‚µ‚Ä‚¨‚­‰Šúposition
-    public RectTransform rectTransform; // ˆÚ“®‚µ‚½‚¢ƒIƒuƒWƒFƒNƒg‚ÌRectTransform
-    private RectTransform parentRectTransform; // ˆÚ“®‚µ‚½‚¢ƒIƒuƒWƒFƒNƒg‚Ìe(Panel)‚ÌRectTransform
+    private Vector2 prevPos; //ï¿½Û‘ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½position
+    public RectTransform rectTransform; // ï¿½Ú“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½RectTransform
+    private RectTransform parentRectTransform; // ï¿½Ú“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½Ìe(Panel)ï¿½ï¿½RectTransform
 
 
     private void Awake()
@@ -42,38 +42,38 @@ public class DragObj : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     }
 
 
-    // ƒhƒ‰ƒbƒOŠJn‚Ìˆ—
+    // ï¿½hï¿½ï¿½ï¿½bï¿½Oï¿½Jï¿½nï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // ƒhƒ‰ƒbƒO‘O‚ÌˆÊ’u‚ğ‹L‰¯‚µ‚Ä‚¨‚­
-        // RectTransform‚Ìê‡‚Íposition‚Å‚Í‚È‚­anchoredPosition‚ğg‚¤
+        // ï¿½hï¿½ï¿½ï¿½bï¿½Oï¿½Oï¿½ÌˆÊ’uï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
+        // RectTransformï¿½Ìê‡ï¿½ï¿½positionï¿½Å‚Í‚È‚ï¿½anchoredPositionï¿½ï¿½ï¿½gï¿½ï¿½
         prevPos = rectTransform.anchoredPosition;
 
     }
 
-    // ƒhƒ‰ƒbƒO’†‚Ìˆ—
+    // ï¿½hï¿½ï¿½ï¿½bï¿½Oï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void OnDrag(PointerEventData eventData)
     {
-        // eventData.position‚©‚çAe‚É]‚¤localPosition‚Ö‚Ì•ÏŠ·‚ğs‚¤
-        // ƒIƒuƒWƒFƒNƒg‚ÌˆÊ’u‚ğlocalPosition‚É•ÏX‚·‚é
+        // eventData.positionï¿½ï¿½ï¿½ï¿½Aï¿½eï¿½É]ï¿½ï¿½localPositionï¿½Ö‚Ì•ÏŠï¿½ï¿½ï¿½ï¿½sï¿½ï¿½
+        // ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ÌˆÊ’uï¿½ï¿½localPositionï¿½É•ÏXï¿½ï¿½ï¿½ï¿½
 
         Vector2 localPosition = GetLocalPosition(eventData.position);
         rectTransform.anchoredPosition = localPosition;
     }
 
-    // ƒhƒ‰ƒbƒOI—¹‚Ìˆ—
+    // ï¿½hï¿½ï¿½ï¿½bï¿½Oï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½
     public void OnEndDrag(PointerEventData eventData)
     {
-        // ƒIƒuƒWƒFƒNƒg‚ğƒhƒ‰ƒbƒO‘O‚ÌˆÊ’u‚É–ß‚·
+        // ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½hï¿½ï¿½ï¿½bï¿½Oï¿½Oï¿½ÌˆÊ’uï¿½É–ß‚ï¿½
         //rectTransform.anchoredPosition = prevPos;
     }
 
-    // ScreenPosition‚©‚çlocalPosition‚Ö‚Ì•ÏŠ·ŠÖ”
+    // ScreenPositionï¿½ï¿½ï¿½ï¿½localPositionï¿½Ö‚Ì•ÏŠï¿½ï¿½Öï¿½
     private Vector2 GetLocalPosition(Vector2 screenPosition)
     {
         Vector2 result = Vector2.zero;
 
-        // screenPosition‚ğe‚ÌÀ•WŒn(parentRectTransform)‚É‘Î‰‚·‚é‚æ‚¤•ÏŠ·‚·‚é.
+        // screenPositionï¿½ï¿½eï¿½Ìï¿½ï¿½Wï¿½n(parentRectTransform)ï¿½É‘Î‰ï¿½ï¿½ï¿½ï¿½ï¿½æ‚¤ï¿½ÏŠï¿½ï¿½ï¿½ï¿½ï¿½.
         RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRectTransform, screenPosition, Camera.main, out result);
 
         return result;

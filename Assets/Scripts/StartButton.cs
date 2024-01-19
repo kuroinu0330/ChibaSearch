@@ -8,5 +8,6 @@ public class StartButton : MonoBehaviour
     public void StartClick()
     {
         SceneManager.LoadScene("MainScene");
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.BGM, 1);
     }
 }

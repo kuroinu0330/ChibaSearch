@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // ’Ç‰Á
+    // ï¿½Ç‰ï¿½
     private Vector3 screenPoint;
     private Vector3 offset;
 
@@ -20,13 +20,13 @@ public class Move : MonoBehaviour
 
     }
 
-    // ’Ç‰Á
+    // ï¿½Ç‰ï¿½
     void OnMouseDown()
     {
         screenPoint = Camera.main.WorldToScreenPoint(transform.position);
         offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
     }
-    // ’Ç‰Á
+    // ï¿½Ç‰ï¿½
     void OnMouseDrag()
     {
         Vector3 currentScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);

@@ -33,7 +33,14 @@ public class QuizMg: MonoBehaviour
     //Quizcreate quizcreate;
     [SerializeField]
     private GameObject TMPText;
+    [SerializeField]
+    private ButtonController _buttonControllerA;
+    public ButtonController ButtonControllerA => _buttonControllerA;
+    [SerializeField]
+    private ButtonController _buttonControllerB;
+    public ButtonController ButtonControllerB => _buttonControllerB;
 
+    private int ClickSECount;
 
     public List<GameObject> badge = new List<GameObject>();
     public List<GameObject> Bookbadge = new List<GameObject>();
@@ -54,12 +61,15 @@ public class QuizMg: MonoBehaviour
         //SoundManager.instance.SEVolume();
         Debug.Log("aaaa");
         QuizScore = 1;
+        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM,1);
     }
+
     public void FalseClick()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 2);
         Debug.Log("bbbb");
         QuizScore = 2;
+        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM,1);
     }
 
     private void Update()
@@ -72,24 +82,28 @@ public class QuizMg: MonoBehaviour
         {
             //����
             case 1:
-                SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
+                //SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
                 Invoke(nameof(quizFalse), 1f);
                 badge[num].SetActive(false);
-                Bookbadge[numBook].SetActive(true);
+                BadgeAlbumManager.instance.GetBadgeThis(num);
+                //Bookbadge[numBook].SetActive(true);
                 Getbadge[numGet].SetActive(true);
                 Debug.Log(numGet);
                 CatholineCompass.instance.JewelGameObjectRemove(QuizMg.instance.badge[num]);
                 Invoke(nameof(badgeGet), 1f);
                 QuizScore = 0;
-                
+                // 移動可能フラグを有効化
+                TrackingMousePosition.Instance.UIButtomExit();
                 break;
             //�s��
             case 2:
-                SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
+                //SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
                 _gameObject.SetActive(false);
                 //Destroy(_gameObject, 2);
-                Debug.Log("�s����");
+                //Debug.Log("�s����");
                 QuizScore = 0;
+                // 移動可能フラグを有効化
+                TrackingMousePosition.Instance.UIButtomExit();
                 break;
         }
     }

@@ -52,7 +52,9 @@ public class TutorialUIManager : MonoBehaviour
     private enum KeyWord
     {
         タッチ,
-        左クリック
+        二本指,
+        左クリック,
+        右クリック
     }
 
     private void Awake()
@@ -113,6 +115,8 @@ public class TutorialUIManager : MonoBehaviour
     {
         // 次のチュートリアルを表示
         TutorialUIUpdate(true);
+
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 4);
     }
 
     /// <summary>
@@ -122,6 +126,8 @@ public class TutorialUIManager : MonoBehaviour
     {
         // 前のチュートリアルを表示
         TutorialUIUpdate(false);
+        
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 4);
     }
 
     /// <summary>
@@ -131,6 +137,9 @@ public class TutorialUIManager : MonoBehaviour
     {
         // 自身を非表示にする
         this.gameObject.SetActive(false);
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 4);
+        // 移動可能フラグを有効化
+        TrackingMousePosition.Instance.UIButtomExit();
     }
 
     /// <summary>
