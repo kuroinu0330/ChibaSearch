@@ -46,6 +46,12 @@ public class QuizMg: MonoBehaviour
     public List<GameObject> Bookbadge = new List<GameObject>();
     public List<GameObject> Getbadge = new List<GameObject>();
 
+    [SerializeField]
+    private GameObject _musimegane;
+    [SerializeField]
+    private Camera _mainCamera;
+    [SerializeField]
+    ZoomCamera _zoomCamera;
     public void Awake()
     {
         if (instance == null)
@@ -69,9 +75,13 @@ public class QuizMg: MonoBehaviour
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 2);
         Debug.Log("bbbb");
         QuizScore = 2;
-        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM,1);
+        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, 1);
+        _musimegane.transform.position = new Vector3(_mainCamera.transform.position.x, 
+                                                     _mainCamera.transform.position.y,
+                                                     _musimegane.transform.position.z);
+        //_zoomCamera._count--;
+        //Debug.Log(_musimegane.transform.position)
     }
-
     private void Update()
     {
         TrueFalse();
