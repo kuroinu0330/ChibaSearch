@@ -25,6 +25,12 @@ public class ZoomCamera : MonoBehaviour
     private RandomFlash[] _listFlashStars = null;
     private Quizcreate[] _listQuizCreates = null;
 
+    [SerializeField]
+    private Image[] _listBadgeImages; // バッジの当たり判定を移動するためのイメージコンポーネントリスト
+
+    [SerializeField]
+    private Image _debugImage;
+
     private void Start()
     {
         _listFlashStars = _badge.GetComponentsInChildren<RandomFlash>();
@@ -33,6 +39,8 @@ public class ZoomCamera : MonoBehaviour
         // 準備　まずはStarを虫眼鏡カメラに表示、Buttonを非表示
         SetEffectActive(true);
         SetQuizBadgeActive(false);
+
+        _listBadgeImages = _badge.GetComponentsInChildren<Image>();
     }
 
     private void SetEffectActive(bool onoff)
@@ -45,14 +53,14 @@ public class ZoomCamera : MonoBehaviour
             {
                 _listFlashStars[i].gameObject.layer = 7;
                 _listFlashStars[i].gameObject.GetComponent<RawImage>().enabled = true;
-                
+
             }
             else
             {
                 _listFlashStars[i].gameObject.layer = 6;
                 _listFlashStars[i].gameObject.GetComponent<RawImage>().enabled = false;
             }
-            
+
         }
     }
 
@@ -112,6 +120,45 @@ public class ZoomCamera : MonoBehaviour
                 SetQuizBadgeActive(true);
                 SetEffectActive(false);
                 Debug.Log("拡大");
+                break;
+        }
+    }
+
+    void Update()
+    {
+        int i = 0;
+        switch (_count)
+        {
+            case 1:
+                foreach (var image in _listBadgeImages)
+                {
+                    image.raycastPadding = Vector4.zero;
+                }
+                break;
+            case 2:
+
+                foreach (var image in _listBadgeImages)
+                {
+                    Vector3 diffV3 = image.transform.position - _mushimeganeRoot.transform.position;
+                    Vector2 center = diffV3 * 2f;
+                    if (i == 0)
+                    {
+                        _debugImage.rectTransform.localPosition = (Vector3)center;
+                        Vector2 targetSized = _debugImage.rectTransform.lossyScale * -0.2f;
+                        _debugImage.raycastPadding = new Vector4(targetSized.y, targetSized.x, targetSized.y, targetSized.x);
+                        //Debug.Log(center.ToString());
+                    }
+                    Vector2 targetSize = image.rectTransform.lossyScale * -350f;
+                    float placeBakerX = 15.0f;
+                    float placeBakerY = 7.0f;
+                    image.raycastPadding
+                         = new Vector4(targetSize.y + center.x * placeBakerX
+                                    , targetSize.x + center.y * placeBakerY
+                                    , targetSize.y - center.x * placeBakerX
+                                    , targetSize.x - center.y * placeBakerY);
+
+                    i++;
+                }
                 break;
         }
     }

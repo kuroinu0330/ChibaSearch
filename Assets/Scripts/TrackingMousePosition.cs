@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class TrackingMousePosition : MonoBehaviour
@@ -5,7 +7,8 @@ public class TrackingMousePosition : MonoBehaviour
     private static TrackingMousePosition _instance;
     public static TrackingMousePosition Instance
     {
-        get{
+        get
+        {
             if (_instance == null)
             {
                 _instance = FindObjectOfType<TrackingMousePosition>();
@@ -29,11 +32,6 @@ public class TrackingMousePosition : MonoBehaviour
     /// </summary>
     //[SerializeField] private RectTransform _mapCanvas;
 
-    /// <summary>
-    /// マウスポインターのRectTransformコンポーネントの参照
-    /// </summary>
-    [SerializeField] private RectTransform _cursorTransform;
-
     [SerializeField] private Camera _camera;
     //[SerializeField] private Camera _Maincamera;
 
@@ -47,14 +45,14 @@ public class TrackingMousePosition : MonoBehaviour
     //public Text TextFrame;
     // [SerializeField]
     // private GameObject CoCo;
-    
+
     //レンズの半径を保持
     [SerializeField]
     private float lensRadius = 100;
     //レンズの中心座標を保持
-    [SerializeField] 
+    [SerializeField]
     private Transform lensPosition;
-    
+
     private Touch touch;
 
     [SerializeField]
@@ -62,7 +60,7 @@ public class TrackingMousePosition : MonoBehaviour
 
     public static TrackingMousePosition instance;
 
-    [SerializeField] 
+    [SerializeField]
     public MoveType moveType = MoveType.None;
 
     public enum MoveType
@@ -87,7 +85,7 @@ public class TrackingMousePosition : MonoBehaviour
         {
             // 1本目の指をトラッキング
             touch = Input.GetTouch(0);
-            
+
             // 「mousePosition」に画面上の指のワールド座標を保持
             mousePosition = touch.position;
 
@@ -104,10 +102,10 @@ public class TrackingMousePosition : MonoBehaviour
                     {
                         // 「mousePosition」をスクリーン上の座標に変換して「target」に代入
                         Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
-                        
+
                         // 「target」をレンズのtransformに代入しても問題ないようにZ座標を同期
                         target.z = _cursorAllTrans.position.z;
-                        
+
                         // 「Lenz」の座標を更新
                         _cursorAllTrans.position = target;
                     }
@@ -120,7 +118,7 @@ public class TrackingMousePosition : MonoBehaviour
             }
         }
         // 画面上にタッチされている指が存在しない且つ「canMoveFlag」がTrueに場合以下の処理を実行
-        else if(canMoveFlag)
+        else if (canMoveFlag)
         {
             // 左クリックが押された際に以下の処理を実行
             if (Input.GetMouseButtonDown(0))
@@ -134,7 +132,7 @@ public class TrackingMousePosition : MonoBehaviour
                 // 移動モードを「None」に設定
                 moveType = MoveType.None;
             }
-            
+
             // 右クリックが押された際に以下の処理を実行
             if (Input.GetMouseButtonDown(1))
             {
@@ -153,7 +151,7 @@ public class TrackingMousePosition : MonoBehaviour
             {
                 // マウスの座標を保持
                 mousePosition = Input.mousePosition;
-                
+
                 // 移動モードによって以下の処理を分岐
                 switch (moveType)
                 {
@@ -163,7 +161,7 @@ public class TrackingMousePosition : MonoBehaviour
                         {
                             Vector3 target = _camera.ScreenToWorldPoint(mousePosition);
                             target.z = _cursorAllTrans.position.z;
-                            _cursorAllTrans.position = target; 
+                            _cursorAllTrans.position = target + new Vector3(-24, 40, 0);
                         }
                         break;
                     // 移動モードが「Map」の場合以下の処理を実行
@@ -183,7 +181,7 @@ public class TrackingMousePosition : MonoBehaviour
         //Debug.Log("レンズの中心座標 : " + (Vector2)lensPosition.position);
         //Debug.Log("マウスの中心座標 : " + (Vector2)_camera.ScreenToWorldPoint(pos));
         //Debug.Log("距離 : " + dis.magnitude);
-        
+
         if (Mathf.Abs(dis.magnitude) >= lensRadius)
         {
             return true;
