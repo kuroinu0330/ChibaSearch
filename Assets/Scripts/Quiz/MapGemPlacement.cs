@@ -57,7 +57,7 @@ public class MapGemPlacement : MonoBehaviour
         {
             _Quiz quiz = new _Quiz();
             string[] values = line[i].Split(",");
-            quiz.question   = values[0];
+            quiz.question = values[0].Replace("¥n", "\n");
             quiz.correct    = values[1];
             quiz.incorrect  = values[2];
 
