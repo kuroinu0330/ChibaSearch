@@ -95,7 +95,7 @@ public class ZoomCamera : MonoBehaviour
             ZoomCount();
         }
     }
-    void ZoomCount()
+    public void ZoomCount()
     {
         switch (_count)
         {
