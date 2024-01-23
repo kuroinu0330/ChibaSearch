@@ -11,7 +11,7 @@ public class ZoomCamera : MonoBehaviour
     private Camera _Camera;
     [Range(_countMin, _countMax)]
     [SerializeField]
-    public int _count = 1;
+    private int _count = 1;
 
     const int _countMax = 2;
     const int _countMin = 1;
@@ -83,7 +83,7 @@ public class ZoomCamera : MonoBehaviour
         {
             _count++;
             SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
-            ZoomCount();
+            ZoomCount(2);
         }
     }
     public void MinusOnClick()
@@ -92,10 +92,10 @@ public class ZoomCamera : MonoBehaviour
         {
             _count--;
             SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
-            ZoomCount();
+            ZoomCount(1);
         }
     }
-    public void ZoomCount()
+    public void ZoomCount(int _count)
     {
         switch (_count)
         {
@@ -114,5 +114,9 @@ public class ZoomCamera : MonoBehaviour
                 Debug.Log("拡大");
                 break;
         }
+    }
+    public void CountReset()
+    {
+        _count = 1;
     }
 }
