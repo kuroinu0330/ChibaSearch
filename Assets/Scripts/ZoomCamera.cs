@@ -87,23 +87,15 @@ public class ZoomCamera : MonoBehaviour
 
     public void PlusOnClick()
     {
-        if (_count < _countMax)
-        {
-            _count++;
-            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
-            ZoomCount();
-        }
+        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
+        ZoomCount(2);
     }
     public void MinusOnClick()
     {
-        if (_count > _countMin)
-        {
-            _count--;
-            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
-            ZoomCount();
-        }
+        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
+        ZoomCount(1);
     }
-    void ZoomCount()
+    public void ZoomCount(int _count)
     {
         switch (_count)
         {

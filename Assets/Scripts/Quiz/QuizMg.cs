@@ -79,9 +79,7 @@ public class QuizMg: MonoBehaviour
         _musimegane.transform.position = new Vector3(_mainCamera.transform.position.x, 
                                                      _mainCamera.transform.position.y,
                                                      _musimegane.transform.position.z);
-        _zoomCamera._count = 1;
-        //_zoomCamera._count--;
-        //Debug.Log(_musimegane.transform.position)
+        _zoomCamera.ZoomCount(1);
     }
     private void Update()
     {
