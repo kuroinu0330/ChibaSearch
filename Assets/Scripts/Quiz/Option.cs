@@ -9,6 +9,6 @@ public class Option : MonoBehaviour
     public void OptionCreate()
     {
         _optionImag.SetActive(true);
-        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 7);
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
     }
 }

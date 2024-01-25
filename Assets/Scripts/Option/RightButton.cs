@@ -23,16 +23,13 @@ public class RightButton : MonoBehaviour
     public Sprite spriteAto;
     public void LightUi()
     {
-        // _bookButton.transform.position = new Vector3(1800, 150, 0);
-        // _plusButton.transform.position = new Vector3(1800, 600, 0);
-        // _minusButton.transform.position = new Vector3(1800, 430, 0);
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
         _bookButton.transform.localPosition = new Vector3(_bookButton.transform.localPosition.x * -1f,
             _bookButton.transform.localPosition.y, _bookButton.transform.localPosition.z);
         _plusButton.transform.localPosition = new Vector3(_plusButton.transform.localPosition.x * -1f,
             _plusButton.transform.localPosition.y, _plusButton.transform.localPosition.z);
         _minusButton.transform.localPosition = new Vector3(_minusButton.transform.localPosition.x * -1f,
             _minusButton.transform.localPosition.y, _minusButton.transform.localPosition.z);
-        //trackingMousePosition.LRKey = TrackingMousePosition.LeftRightKey.Right;
         _RightButton.SetActive(false);
         _LeftButton.SetActive(true);
         _bookButton.GetComponent<Image>().sprite = spriteMae;

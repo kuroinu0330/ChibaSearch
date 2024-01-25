@@ -16,7 +16,7 @@ public class BadgeBook : MonoBehaviour
         }
         else
         {
-            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 8);
+            SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 7);
             _Book.SetActive(true);
             BadgeAlbumManager.instance.BadgeActionCheck();
         }

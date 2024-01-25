@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static SoundManager;
 
 public class Quizcreate : MonoBehaviour
 {
@@ -29,13 +28,14 @@ public class Quizcreate : MonoBehaviour
     //TrackingMousePosition trackingMousePosition;
     public void Quizcreate1()
     {
-        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.BGM, _Channel);
         if (QuizPrefab == null)
         {
             
         }
         else
         {
+            SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
             QuizMg.instance.ButtonControllerA.InteractiveOn();
             QuizMg.instance.ButtonControllerB.InteractiveOn();
             QuizMg.instance.badgedelet(num);
