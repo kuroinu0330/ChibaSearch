@@ -12,6 +12,7 @@ public class PopUpSelect : MonoBehaviour
     private GameObject _gameObject;
     public void PopUpSelectClick()
     {
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
         _gameObject.SetActive(true);
         _popUpMg.PopUpImageChange(Select);
     }
