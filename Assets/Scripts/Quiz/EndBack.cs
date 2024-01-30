@@ -9,6 +9,6 @@ public class EndBack : MonoBehaviour
     public void EndClick()
     {
         endBackimage.SetActive(true);
-        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 7);
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
     }
 }
