@@ -7,6 +7,7 @@ public class badgeGetFalse : MonoBehaviour
     
     public void Getfalse()
     {
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
         QuizMg.instance.Getbadge[QuizMg.instance.numGet].SetActive(false);
         _obj.SetActive(false);
         // 移動可能フラグを有効化
