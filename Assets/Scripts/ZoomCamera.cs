@@ -95,8 +95,10 @@ public class ZoomCamera : MonoBehaviour
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, _Channel);
         ZoomCount(1);
     }
-    public void ZoomCount(int _count)
+    public void ZoomCount(int count)
     {
+        _count = count;
+        
         switch (_count)
         {
             case 1:
