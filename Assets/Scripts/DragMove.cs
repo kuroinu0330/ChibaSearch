@@ -13,9 +13,7 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log(eventData);
-        //throw new System.NotImplementedException();
     }
-
     public void OnDrag(PointerEventData eventData)
     {
         //if (trackingMousePosition.MapisActive == true) 
@@ -23,27 +21,7 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
         {
             //if(_rectTransform.)
             //Debug.Log(eventData);
-            Vector2 vec = eventData.delta;
-
-            // if (_rectTransform.anchoredPosition.x >= 27900)
-            // {
-            //     vec = new Vector2(-1f, vec.y);
-            // }
-            // else if (_rectTransform.anchoredPosition.x <= -27900)
-            // {
-            //     vec = new Vector2(1f, vec.y);
-            // }
-            //
-            // if (_rectTransform.anchoredPosition.y >= 19590)
-            // {
-            //     vec = new Vector2(vec.x, -1f);
-            //
-            // }
-            // else if (_rectTransform.anchoredPosition.y <= -19590)
-            // {
-            //     vec = new Vector2(vec.x, 1f);
-            // }
-            
+            Vector2 vec = eventData.delta;            
             // 移動量を表すベクター
             Vector2 Movement = vec * _speed;
             
@@ -68,13 +46,9 @@ public class DragMove : MonoBehaviour,IDragHandler, IBeginDragHandler, IEndDragH
                 Movement = new Vector2(Movement.x, 0f);
                 _rectTransform.anchoredPosition = new Vector2(_rectTransform.anchoredPosition.x, -19584);
             }
-
-            //_rectTransform.anchoredPosition += vec * _speed;
             _rectTransform.anchoredPosition += Movement;
         }
-
     }
-
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log(eventData);

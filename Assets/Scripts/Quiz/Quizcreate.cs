@@ -9,30 +9,20 @@ public class Quizcreate : MonoBehaviour
     private Transform[] _ButtonTop;
     [SerializeField]
     private Transform[] _ButtonBottom;
-
     [SerializeField, Header("チャンネル")]
     private int _Channel;
-
     [SerializeField]
     private GameObject QuizPrefab;
-
     [SerializeField]
     QuizMg quizMg;
-
     [SerializeField]
     public int num;
-
     [SerializeField]
     GameObject canvas;
-
-    //TrackingMousePosition trackingMousePosition;
     public void Quizcreate1()
     {
         SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.BGM, _Channel);
-        if (QuizPrefab == null)
-        {
-            
-        }
+        if (QuizPrefab == null){}
         else
         {
             SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
