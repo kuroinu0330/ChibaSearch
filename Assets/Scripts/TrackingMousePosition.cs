@@ -22,29 +22,16 @@ public class TrackingMousePosition : MonoBehaviour
             return _instance;
         }
     }
-    /// <summary>
-    /// マウスポインターを投影するCanvasコンポーネントの参照
-    /// </summary>
-    //[SerializeField] private Canvas _canvas;
-
-    /// <summary>
-    /// マウスポインターを投影するCanvasのRectTransformコンポーネントの参照
-    /// </summary>
-    //[SerializeField] private RectTransform _mapCanvas;
 
     [SerializeField] private Camera _camera;
-    //[SerializeField] private Camera _Maincamera;
 
     [SerializeField] private RectTransform _cursorAllTrans;
 
-    //[SerializeField] private bool MapisActive = true;
+
     public bool isActiveflag = false;
 
     public bool canMoveFlag = true;
-    //private int flagCount;
-    //public Text TextFrame;
-    // [SerializeField]
-    // private GameObject CoCo;
+
 
     //レンズの半径を保持
     [SerializeField]
@@ -70,13 +57,6 @@ public class TrackingMousePosition : MonoBehaviour
         Map
     }
 
-    // public enum LeftRightKey
-    // {
-    //     Left,
-    //     Right,
-    // }
-    // [SerializeField]
-    // public LeftRightKey LRKey;
 
     void Update()
     {
@@ -178,9 +158,6 @@ public class TrackingMousePosition : MonoBehaviour
     {
         Vector2 dis = (Vector2)lensPosition.position - (Vector2)_camera.ScreenToWorldPoint(pos);
 
-        //Debug.Log("レンズの中心座標 : " + (Vector2)lensPosition.position);
-        //Debug.Log("マウスの中心座標 : " + (Vector2)_camera.ScreenToWorldPoint(pos));
-        //Debug.Log("距離 : " + dis.magnitude);
 
         if (Mathf.Abs(dis.magnitude) >= lensRadius)
         {
