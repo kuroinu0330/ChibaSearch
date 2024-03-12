@@ -7,17 +7,17 @@ using static SoundManager;
 public class RandMark : MonoBehaviour
 {
     [SerializeField, Header("建物の名所")]
-    private GameObject _randMarkTest;
+    private GameObject _randMark;
     // ボタンを押したときの処理
     public void OnButtonDown()
     {
         Debug.Log("Down");
-        _randMarkTest.SetActive(true);
+        _randMark.SetActive(true);
     }
     // ボタンを離したときの処理
     public void OnButtonUp()
     {
         Debug.Log("Up");
-        _randMarkTest.SetActive(false);
+        _randMark.SetActive(false);
     }
 }
