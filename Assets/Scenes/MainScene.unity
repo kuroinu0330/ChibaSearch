@@ -7195,10 +7195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 1951553876}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &430186130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10287,10 +10284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 599921038}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &572079491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13069,10 +13063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 1044824573}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &761071152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13594,10 +13585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 661081292}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &800452768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19159,10 +19147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 230418906}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &1099367198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24083,10 +24068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aeafecf5518d944964701397b4c35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RandMarkTest: {fileID: 1957240937}
-  _Count: 0
-  _Time: 3
-  _trackingmousePosition: {fileID: 1475080839}
+  _randMarkTest: {fileID: 0}
 --- !u!114 &1354281354
 MonoBehaviour:
   m_ObjectHideFlags: 0

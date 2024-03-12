@@ -1,7 +1,7 @@
 //using System.Collections.Generic;
 //using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-//操作などが書かれているコードです。
+
 public class TrackingMousePosition : MonoBehaviour
 {
     private static TrackingMousePosition _instance;
@@ -22,29 +22,16 @@ public class TrackingMousePosition : MonoBehaviour
             return _instance;
         }
     }
-    /// <summary>
-    /// マウスポインターを投影するCanvasコンポーネントの参照
-    /// </summary>
-    //[SerializeField] private Canvas _canvas;
-
-    /// <summary>
-    /// マウスポインターを投影するCanvasのRectTransformコンポーネントの参照
-    /// </summary>
-    //[SerializeField] private RectTransform _mapCanvas;
 
     [SerializeField] private Camera _camera;
-    //[SerializeField] private Camera _Maincamera;
 
     [SerializeField] private RectTransform _cursorAllTrans;
 
-    //[SerializeField] private bool MapisActive = true;
+
     public bool isActiveflag = false;
 
     public bool canMoveFlag = true;
-    //private int flagCount;
-    //public Text TextFrame;
-    // [SerializeField]
-    // private GameObject CoCo;
+
 
     //レンズの半径を保持
     [SerializeField]
