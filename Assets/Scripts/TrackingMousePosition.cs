@@ -1,7 +1,7 @@
 //using System.Collections.Generic;
 //using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-
+//操作などが書かれているコードです。
 public class TrackingMousePosition : MonoBehaviour
 {
     private static TrackingMousePosition _instance;
@@ -70,13 +70,6 @@ public class TrackingMousePosition : MonoBehaviour
         Map
     }
 
-    // public enum LeftRightKey
-    // {
-    //     Left,
-    //     Right,
-    // }
-    // [SerializeField]
-    // public LeftRightKey LRKey;
 
     void Update()
     {
@@ -178,9 +171,6 @@ public class TrackingMousePosition : MonoBehaviour
     {
         Vector2 dis = (Vector2)lensPosition.position - (Vector2)_camera.ScreenToWorldPoint(pos);
 
-        //Debug.Log("レンズの中心座標 : " + (Vector2)lensPosition.position);
-        //Debug.Log("マウスの中心座標 : " + (Vector2)_camera.ScreenToWorldPoint(pos));
-        //Debug.Log("距離 : " + dis.magnitude);
 
         if (Mathf.Abs(dis.magnitude) >= lensRadius)
         {
