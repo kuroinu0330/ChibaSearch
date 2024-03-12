@@ -59,13 +59,13 @@ public class TutorialUIManager : MonoBehaviour
 
     private void Awake()
     {
-        Initializ();
+        Initialize();
     }
 
     /// <summary>
     /// 各種UIの再調整を行う関数
     /// </summary>
-    private void Initializ()
+    private void Initialize()
     {
         // 実行予定のプラットフォームによって以下の処理を分岐
         switch (_isPlatform)
