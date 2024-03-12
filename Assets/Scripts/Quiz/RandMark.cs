@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static SoundManager;
 
 public class RandMark : MonoBehaviour
@@ -11,29 +12,55 @@ public class RandMark : MonoBehaviour
     private int _Count;
     [SerializeField, Tooltip("カウント")]
     private float _Time;
+    //[SerializeField]
+    //private Button _button;
+    [SerializeField]
+    TrackingMousePosition _trackingmousePosition;
     // Start is called before the first frame update
+    private void Start()
+    {
+        //_button = GetComponent<Button>();
+    }
     private void Update()
     {
         //Debug.Log(_Time);
     }
-    public void OnTextClick()
+    /*public void OnTextClick()
     {
         SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 0);
         _Count++;
-        if (_Count == 1)
+        switch (_Count)
         {
-            _RandMarkTest.SetActive(true);
-            Invoke(nameof(TextTime), _Time);
-        }
-        if (_Count == 2)
-        {
-            _RandMarkTest.SetActive(false);
-            _Count = 0;
+            case 1:
+                StartCoroutine(TextCoroutine());
+                break;
+            case 2:
+                _RandMarkTest.SetActive(false);
+                _Count = 0;
+                break;
         }
     }
-    private void TextTime()
+    private IEnumerator TextCoroutine()
     {
-        _RandMarkTest.SetActive(false);
+        //_button.interactable = false;
+        _RandMarkTest.SetActive(true);
+        _trackingmousePosition.canMoveFlag = true;
+        yield return new WaitForSeconds(_Time);
         _Count = 0;
+        _RandMarkTest.SetActive(false);
+        //_button.interactable = true;
+        yield break;
+    }*/
+    // ボタンを押したときの処理
+    public void OnButtonDown()
+    {
+        Debug.Log("Down");
+        _RandMarkTest.SetActive(true);
+    }
+    // ボタンを離したときの処理
+    public void OnButtonUp()
+    {
+        Debug.Log("Up");
+        _RandMarkTest.SetActive(false);
     }
 }

@@ -2570,7 +2570,7 @@ RectTransform:
   m_Children:
   - {fileID: 1670794423}
   m_Father: {fileID: 1475080838}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 36}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6056,7 +6056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2a4c46c957c9ee4da141d9b99ba60a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4441a8714fd28f4bb5bbec0f599e6d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7144,19 +7144,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 430186127}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 430186129}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &430186127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7209,7 +7197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 1951553876}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &430186130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7246,6 +7235,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 430186129}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 430186129}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8536,7 +8557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31c773cc7db0a614a95f166cb1898f0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1310d533e12c22d4386a402cfba4c56d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9942,7 +9963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b64374fe6f1672346818ebb387823768, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f4c8a2f34b60564f9970548e585f262, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10268,7 +10289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 599921038}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &572079491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10312,19 +10334,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 572079492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 572079490}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &572079492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10399,6 +10409,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 572079490}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 572079490}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12012,7 +12054,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 94d19d595cd70104dbde5ad823225bd6, type: 3}
   - {fileID: 21300000, guid: 9ba5cede2d8e3664bb7f3a69bccb742e, type: 3}
   - {fileID: 21300000, guid: 4ba473719af5e844bbfa5c657b83f977, type: 3}
-  - {fileID: 21300000, guid: 470d93770c1035a449ee44ef79cc61ef, type: 3}
+  - {fileID: 21300000, guid: a57ce0b8e0b45c446a72db740910e271, type: 3}
   - {fileID: 21300000, guid: c8ea850a75e665d429bda940d818ab57, type: 3}
   - {fileID: 21300000, guid: 57d6853838183b04bbd4b86d5775b50f, type: 3}
   - {fileID: 21300000, guid: c78053810da29364ba4947e8b6eb302f, type: 3}
@@ -12028,7 +12070,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 923aa6ba9b7e606469b59a9fd4f8141b, type: 3}
   - {fileID: 21300000, guid: 01bd906504371a7418c52b80ad9406ec, type: 3}
   - {fileID: 21300000, guid: a9a7bc4ea20b9ca42a447af8af62b3f8, type: 3}
-  - {fileID: 21300000, guid: 77cbff6a26b87c640977f94b6840da3c, type: 3}
+  - {fileID: 21300000, guid: 0736bab4335bccc4180f255a87d1f5a5, type: 3}
   - {fileID: 21300000, guid: c158a05c09450cf40b007f439a3a8212, type: 3}
   - {fileID: 21300000, guid: 32bd26be31970c0478fccf57cc7e5e1e, type: 3}
   - {fileID: 21300000, guid: 6d7309c25da2e874ebab392998bd6553, type: 3}
@@ -12038,7 +12080,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2ee4cc5f1465e384586509b9e0d47fe2, type: 3}
   - {fileID: 21300000, guid: 01d94da554af25642a4a4aebc431899b, type: 3}
   - {fileID: 21300000, guid: 1563a247f6875a24b9e2d85e769ca9df, type: 3}
-  - {fileID: 21300000, guid: 545dbca67071dca43bc577ba86d523cd, type: 3}
+  - {fileID: 21300000, guid: d0d1d957d677f4f459a578890b457389, type: 3}
   - {fileID: 21300000, guid: 23a172ca2b22bb346ac404e775f76a9e, type: 3}
   - {fileID: 21300000, guid: f2e3071ad15b32949b159e10aba3c1ca, type: 3}
   - {fileID: 21300000, guid: 1fc640e32247b824cbaa9f7e8008a721, type: 3}
@@ -12046,8 +12088,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b433679fe7178a45a9f583c3215ff91, type: 3}
   - {fileID: 21300000, guid: 224bb8e61bdd2814a859e2043eb3bd18, type: 3}
   - {fileID: 21300000, guid: aa5c7582a12e90c4e8d0d4c4290d5cdb, type: 3}
-  - {fileID: 21300000, guid: 15b47ed883f87304aa77ceba1b6b1e7e, type: 3}
-  - {fileID: 21300000, guid: e8461331e0f043645b5858203c67c7c9, type: 3}
+  - {fileID: 21300000, guid: 1e3f2ecef0833024db5b41889c3e569c, type: 3}
+  - {fileID: 21300000, guid: 64dff65968bd2a047ac79742458be176, type: 3}
   - {fileID: 21300000, guid: a5fd62d9e55ce1c4dbf5ea92d02b82ec, type: 3}
   - {fileID: 21300000, guid: a852baca6c4d3d346baf040a57474d1f, type: 3}
   - {fileID: 21300000, guid: b57845d10ca95ef4e92b26a9be288361, type: 3}
@@ -12891,93 +12933,6 @@ MonoBehaviour:
   _popUpMg: {fileID: 661225418}
   Select: 7
   _gameObject: {fileID: 182020540}
---- !u!1 &753400037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 753400038}
-  - component: {fileID: 753400040}
-  - component: {fileID: 753400039}
-  - component: {fileID: 753400041}
-  m_Layer: 0
-  m_Name: Tiba
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &753400038
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753400037}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 450, y: 450, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1475080838}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &753400039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753400037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5aaabf5962114584e85c523f9c5380c4, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &753400040
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753400037}
-  m_CullTransparentMesh: 1
---- !u!114 &753400041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753400037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb0938c93727b149b116c8d5d3cbef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingMousePosition: {fileID: 0}
 --- !u!1 &761071146
 GameObject:
   m_ObjectHideFlags: 0
@@ -13063,19 +13018,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 761071149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 761071151}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &761071149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13128,7 +13071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 1044824573}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &761071152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13165,6 +13109,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 761071151}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 761071151}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13567,19 +13543,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 800452765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 800452767}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &800452765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13632,7 +13596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 661081292}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &800452768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13669,6 +13634,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 800452767}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 800452767}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15441,7 +15438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19e90263d87848b43bb3fc891c8b7032, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41ad31e10e81d1d44984d2babe83123d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18170,7 +18167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c43e502043dad4a46a310962faad7918, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0e6f90ab315dcc4595e13650c1a5a2a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19111,19 +19108,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1099367195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1099367197}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1099367195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19176,7 +19161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 230418906}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &1099367198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19213,6 +19199,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1099367197}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1099367197}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -22277,7 +22295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 322dddd6e2ee2d24d9b910f5b7585b08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f98c86b3cd9d0dc44b863de72640330a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22488,7 +22506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19e90263d87848b43bb3fc891c8b7032, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41ad31e10e81d1d44984d2babe83123d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22767,7 +22785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2a4c46c957c9ee4da141d9b99ba60a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4441a8714fd28f4bb5bbec0f599e6d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24014,19 +24032,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1354281351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1354281353}
-        m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
-        m_MethodName: OnTextClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1354281351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24079,7 +24085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _RandMarkTest: {fileID: 1957240937}
   _Count: 0
-  _Time: 5
+  _Time: 3
+  _trackingmousePosition: {fileID: 1475080839}
 --- !u!114 &1354281354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24116,6 +24123,38 @@ MonoBehaviour:
         - m_Target: {fileID: 1475080839}
           m_TargetAssemblyTypeName: TrackingMousePosition, Assembly-CSharp
           m_MethodName: UIButtomExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1354281353}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1354281353}
+          m_TargetAssemblyTypeName: RandMark, Assembly-CSharp
+          m_MethodName: OnButtonUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -24779,7 +24818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2e0fdd3a7fefed45b903a12cc5435dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bca9bf05181e95c4b83016f7b579787b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25798,7 +25837,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 604183676}
-  - {fileID: 753400038}
   - {fileID: 200539050}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -26032,7 +26070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 322dddd6e2ee2d24d9b910f5b7585b08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f98c86b3cd9d0dc44b863de72640330a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26446,7 +26484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94b1dd24dd1ed42478af53f626994682, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7620aca7eb1d6f44900ab4c5b64fd29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26552,7 +26590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31c773cc7db0a614a95f166cb1898f0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1310d533e12c22d4386a402cfba4c56d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28036,7 +28074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e89d5b92d47ed541b6d9340b9e5c901, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a49001a86fa9f044fa4290be8110d0f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28201,7 +28239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2e0fdd3a7fefed45b903a12cc5435dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bca9bf05181e95c4b83016f7b579787b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29614,7 +29652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b64374fe6f1672346818ebb387823768, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f4c8a2f34b60564f9970548e585f262, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31261,7 +31299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94b1dd24dd1ed42478af53f626994682, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7620aca7eb1d6f44900ab4c5b64fd29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33145,7 +33183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81e5b651078aa9b429072eeb0379b086, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ffe05ee1088c3f4a82b4a73ccd9a2f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34551,7 +34589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e89d5b92d47ed541b6d9340b9e5c901, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a49001a86fa9f044fa4290be8110d0f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35369,7 +35407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 81e5b651078aa9b429072eeb0379b086, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ffe05ee1088c3f4a82b4a73ccd9a2f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36289,7 +36327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c43e502043dad4a46a310962faad7918, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0e6f90ab315dcc4595e13650c1a5a2a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
