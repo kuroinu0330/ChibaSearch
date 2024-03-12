@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static SoundManager;
 
 public class Quizcreate : MonoBehaviour
 {
@@ -10,32 +9,23 @@ public class Quizcreate : MonoBehaviour
     private Transform[] _ButtonTop;
     [SerializeField]
     private Transform[] _ButtonBottom;
-
     [SerializeField, Header("チャンネル")]
     private int _Channel;
-
     [SerializeField]
     private GameObject QuizPrefab;
-
     [SerializeField]
     QuizMg quizMg;
-
     [SerializeField]
     public int num;
-
     [SerializeField]
     GameObject canvas;
-
-    //TrackingMousePosition trackingMousePosition;
     public void Quizcreate1()
     {
-        SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
-        if (QuizPrefab == null)
-        {
-            
-        }
+        SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.BGM, _Channel);
+        if (QuizPrefab == null){}
         else
         {
+            SoundManager.instance.PlayAudioSorce(SoundManager.AudioOfType.SYSTEMSE, 0);
             QuizMg.instance.ButtonControllerA.InteractiveOn();
             QuizMg.instance.ButtonControllerB.InteractiveOn();
             QuizMg.instance.badgedelet(num);

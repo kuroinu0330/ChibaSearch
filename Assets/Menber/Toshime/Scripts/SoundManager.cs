@@ -54,7 +54,7 @@ public class SoundManager : MonoBehaviour
             {
                 value = 0.0f;
             }
-            else if (1f > value)
+            else if (1f < value)
             {
                 value = 1.0f;
             }
@@ -102,12 +102,11 @@ public class SoundManager : MonoBehaviour
     private List<UnityEngine.UI.Slider> _sliders;
 
     // シングルトン化
-    public static SoundManager instance; 
+    public static SoundManager instance;
 
     #endregion
-    
     #region クラスの定義
-    
+
     // 音源再生用のクラス
     [Serializable]
     private class AudioSources : Audio<AudioSource>
@@ -238,8 +237,7 @@ public class SoundManager : MonoBehaviour
                     else
                     {
                         // 音量をBGM用の設定で代入する
-                        audioSource.volume = _soundManager.BGMVolume;
-                        //audioSource.volume = _soundManager._sliders[0].value;
+                        audioSource.volume = _soundManager.BGMVolume;  
                         //Debug.Log("準備段階：" + audioSource.volume);
 
                         // 生成時に再生される設定を無効にする
@@ -258,8 +256,11 @@ public class SoundManager : MonoBehaviour
                     
                     // 音量をSE用の設定で代入する
                     audioSource.volume = _soundManager.SEVolume;
-                    //audioSource.volume = _soundManager._sliders[1].value;
-                    //Debug.Log("準備段階：" + audioSource.volume);
+                    /*audioSource.volume = _soundManager._sliders[0].value;
+                    GameObject SeSlider = GameObject.Find("SeSlider");
+                    UnityEngine.UI.Slider _Selider;
+                    _Selider = SeSlider.GetComponent<UnityEngine.UI.Slider>();
+                    _soundManager._sliders[0] = _Selider;*/
 
                     // 生成時に再生される設定を無効にする
                     audioSource.playOnAwake = false;
@@ -285,8 +286,8 @@ public class SoundManager : MonoBehaviour
                 case AudioOfType.PLAYERSE:
                     
                     // 音量をSE用の設定で代入する
-                    audioSource.volume = _soundManager.SEVolume;
-                    //audioSource.volume = _soundManager._sliders[1].value;
+                    //audioSource.volume = _soundManager.SEVolume;
+                    audioSource.volume = _soundManager._sliders[1].value;
                     Debug.Log("準備段階：" + audioSource.volume);
 
                     // 生成時に再生される設定を無効にする

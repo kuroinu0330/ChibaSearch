@@ -8,7 +8,7 @@ using static SoundManager;
 
 public class QuizMg: MonoBehaviour
 {
-    [SerializeField, Header("�`�����l��")]
+    [SerializeField]
     private int _Channel;
     [SerializeField]
     public int num;
@@ -79,8 +79,7 @@ public class QuizMg: MonoBehaviour
         _musimegane.transform.position = new Vector3(_mainCamera.transform.position.x, 
                                                      _mainCamera.transform.position.y,
                                                      _musimegane.transform.position.z);
-        //_zoomCamera._count--;
-        //Debug.Log(_musimegane.transform.position)
+        _zoomCamera.ZoomCount(1);
     }
     private void Update()
     {
@@ -90,7 +89,6 @@ public class QuizMg: MonoBehaviour
     {
         switch (QuizScore)
         {
-            //����
             case 1:
                 //SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
                 Invoke(nameof(quizFalse), 1f);
@@ -105,7 +103,6 @@ public class QuizMg: MonoBehaviour
                 // 移動可能フラグを有効化
                 TrackingMousePosition.Instance.UIButtomExit();
                 break;
-            //�s��
             case 2:
                 //SoundManager.instance.PlayAudioSorce(AudioOfType.BGM, _Channel);
                 _gameObject.SetActive(false);
