@@ -1,39 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static SoundManager;
 
 public class RandMark : MonoBehaviour
 {
     [SerializeField, Header("建物の名所")]
-    private GameObject _RandMarkTest;
-    [SerializeField,Tooltip("カウント")]
-    private int _Count;
-    [SerializeField, Tooltip("カウント")]
-    private float _Time;
-    // Start is called before the first frame update
-    private void Update()
+    private GameObject _randMarkTest;
+    // ボタンを押したときの処理
+    public void OnButtonDown()
     {
-        //Debug.Log(_Time);
+        Debug.Log("Down");
+        _randMarkTest.SetActive(true);
     }
-    public void OnTextClick()
+    // ボタンを離したときの処理
+    public void OnButtonUp()
     {
-        SoundManager.instance.PlayAudioSorce(AudioOfType.SYSTEMSE, 0);
-        _Count++;
-        if (_Count == 1)
-        {
-            _RandMarkTest.SetActive(true);
-            Invoke(nameof(TextTime), _Time);
-        }
-        if (_Count == 2)
-        {
-            _RandMarkTest.SetActive(false);
-            _Count = 0;
-        }
-    }
-    private void TextTime()
-    {
-        _RandMarkTest.SetActive(false);
-        _Count = 0;
+        Debug.Log("Up");
+        _randMarkTest.SetActive(false);
     }
 }
